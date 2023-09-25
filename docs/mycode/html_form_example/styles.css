@@ -1,0 +1,16 @@
+p{
+ color:blue;
+}
+
+.flex{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+form{
+ color:green;
+ text-align: center;
+}
+form > input{
+ width:40%;
+}
