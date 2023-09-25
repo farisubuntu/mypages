@@ -1,6 +1,10 @@
 {
   "paths": [
     {
+      "type": "file",
+      "value": "index.md"
+    },
+    {
       "type": "dir",
       "name": "CSS",
       "children": [
