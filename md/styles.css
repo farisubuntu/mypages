@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   padding: 1rem;
 }
@@ -35,13 +36,19 @@ code{
   body{
     display: flex;
   }
-  nav{
-    flex:1;
+  .sidenav > ul>ul{
+    border:1px solid black;
   }
-  .sidenav {
+  .sidenav{
+    flex:2;
+    
+  }
+  .sidenav li{
+    padding-left: 0.3rem;
+  }
+  
+  #content {
     flex:7;
   }
-  pre,code {
-    font-size: x-small;
-  }
+  
 }
