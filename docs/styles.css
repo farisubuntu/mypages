@@ -32,6 +32,35 @@ pre {
 code{
   /* white-space: normal !important; */
 } 
+@media screen and (max-width: 549px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    padding:1rem!important;
+    font-size: small!important;
+  }
+  .sidenav > ul>ul{
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid black;
+  }
+  .sidenav{
+    
+  }
+  .sidenav li{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3rem;
+  }
+  
+  #content {
+
+  }
+  pre{
+    font-size: small!important;
+  }
+  
+}
 @media screen and (min-width: 550px) {
   body{
     display: flex;
