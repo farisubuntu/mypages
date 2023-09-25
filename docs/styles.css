@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   padding: 1rem;
 }
@@ -14,27 +15,40 @@ pre {
   background-color: black;
 }
 
-nav,
-nav > ul {
+.sidenav * {
   list-style-type: none;
-  padding: 0px;
+  padding:0px;
 }
 
-nav > ul > li {
-  list-style-type: none;
-  margin: 2px 0;
-  padding: 0px;
-  padding-left: 5px;
+pre {
+  overflow-x: auto !important;
+  white-space: pre-wrap !important;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap !important;      /* Opera 4-6 */
+  white-space: -o-pre-wrap !important;    /* Opera 7 */
+  word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
 }
 
+code{
+  /* white-space: normal !important; */
+} 
 @media screen and (min-width: 550px) {
   body{
     display: flex;
   }
-  nav{
-    flex:1;
+  .sidenav > ul>ul{
+    border:1px solid black;
   }
-  .sidenav {
+  .sidenav{
+    flex:2;
+    
+  }
+  .sidenav li{
+    padding-left: 0.3rem;
+  }
+  
+  #content {
     flex:7;
   }
+  
 }
