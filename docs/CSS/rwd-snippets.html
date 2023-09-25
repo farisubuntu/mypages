@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./_assets/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="./prism.css">
+<link rel="stylesheet" href="./prism.css">
+<link rel="stylesheet" href="./styles.css">
+<style>
+	h1 {
+		color: green;
+	}
+
+	pre {
+		border: 1px dashed red;
+	}
+</style>
 <body>
-<nav>
-	<ul>
+
+	<nav>
+		<ul>
 <li><a class="" href="../index.html">index</a></li>
 <li class="heading"><span>CSS</span></li>
 <ul>
@@ -93,8 +111,8 @@
 <li><a class="" href="../javascript/js_cheatsheet.html">js cheatsheet</a></li>
 </ul>
 </ul>
-</nav>
-<article>
+	</nav>
+	<article>
 	<h1 id="rwd-notes%3A">RWD notes: <a class="heading-anchor-permalink" href="#rwd-notes%3A">#</a></h1>
 <h2 id="convert-a-menu-to-a-dropdown-for-small-screens">Convert a Menu to a Dropdown for Small Screens <a class="heading-anchor-permalink" href="#convert-a-menu-to-a-dropdown-for-small-screens">#</a></h2>
 <pre><code class="language-html">&lt;nav&gt;
@@ -295,7 +313,10 @@ x
 <li>In the above list, the theming and navigation are done via media queries. The rest is about modern CSS features like clamp() comparison function and container queries.</li>
 </ul>
 
-</article>
-
+	</article>
+	<script src="./prism.css"></script>
+	<script src="./prism.js"></script>
+	<script>prism.Highlight();</script>
 </body>
+
 </html>
