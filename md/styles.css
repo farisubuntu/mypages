@@ -1,5 +1,8 @@
-/* my site style */
+h1 {
+ color: rgb(255, 191, 41);
+}
 
-h1{
- color:green;
+pre {
+ border: 1px dashed red;
+ background-color: black;
 }

@@ -1,8 +1,8 @@
-/* my site style */
-
-pre{
- background-color: black;
+h1 {
+ color: rgb(255, 191, 41);
 }
-code{
- color:rgb(0, 0, 255);
+
+pre {
+ border: 1px dashed red;
+ background-color: black;
 }
