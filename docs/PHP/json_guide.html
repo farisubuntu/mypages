@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="./prism.css">
+<link rel="stylesheet" href="./prism.css">
+<link rel="stylesheet" href="./styles.css">
+<style>
+	h1 {
+		color: green;
+	}
+
+	pre {
+		border: 1px dashed red;
+	}
+</style>
+<body>
+
+	<nav>
+		<ul>
+<li><a class="" href="../index.html">index</a></li>
+<li class="heading"><span>CSS</span></li>
+<ul>
+<li><a class="" href="../CSS/css-media-and-rwd.html">css media and rwd</a></li>
+<li><a class="" href="../CSS/css-naming-convention.html">css naming convention</a></li>
+<li><a class="" href="../CSS/css_page_media.html">css page media</a></li>
+<li><a class="" href="../CSS/flexbox-review.html">flexbox review</a></li>
+<li><a class="" href="../CSS/grid-review.html">grid review</a></li>
+<li><a class="" href="../CSS/notes_grid_or_flexbox.html">notes grid or flexbox</a></li>
+<li><a class="" href="../CSS/rwd-snippets.html">rwd snippets</a></li>
+<li><a class="" href="../CSS/sizing_items_in_css.html">sizing items in css</a></li>
+</ul>
+<li class="heading"><span>Github</span></li>
+<ul>
+<li><a class="" href="../Github/gcm.html">gcm</a></li>
+<li><a class="" href="../Github/git-branching.html">git branching</a></li>
+<li><a class="" href="../Github/git-flight-rules.html">git flight rules</a></li>
+<li><a class="" href="../Github/git-gcm-configure.html">git gcm configure</a></li>
+<li><a class="" href="../Github/git.html">git</a></li>
+<li><a class="" href="../Github/gitpod.html">gitpod</a></li>
+<li><a class="" href="../Github/integrate_github_with_wordpress.html">integrate github with wordpress</a></li>
+<li><a class="" href="../Github/md-to-github.html">md to github</a></li>
+</ul>
+<li class="heading"><span>Leaf 3</span></li>
+<ul>
+<li><a class="" href="../Leaf-3/basic.html">basic</a></li>
+<li><a class="" href="../Leaf-3/helpers.html">helpers</a></li>
+<li><a class="" href="../Leaf-3/mvc.html">mvc</a></li>
+</ul>
+<li class="heading"><span>Network Net</span></li>
+<ul>
+<li><a class="" href="../Network_Net/anonsurf_vpn_install.html">anonsurf vpn install</a></li>
+<li><a class="" href="../Network_Net/dd-wrt.html">dd wrt</a></li>
+<li><a class="" href="../Network_Net/dd-wrt_multiple_bssids.html">dd wrt multiple bssids</a></li>
+<li><a class="" href="../Network_Net/ddwrt_basic_wl_settings.html">ddwrt basic wl settings</a></li>
+<li><a class="" href="../Network_Net/download_youtube_videos.html">download youtube videos</a></li>
+<li><a class="" href="../Network_Net/riseup-vpn.html">riseup vpn</a></li>
+</ul>
+<li class="heading"><span>PHP</span></li>
+<ul>
+<li><a class="" href="22092023.html">22092023</a></li>
+<li><a class="" href="LearningResources.html">LearningResources</a></li>
+<li><a class="" href="edx_js_backend_frameworks.html">edx js backend frameworks</a></li>
+<li><a class="" href="embed_lib.html">embed lib</a></li>
+<li><a class="" href="express_mdn.html">express mdn</a></li>
+<li><a class="" href="helpful_resources.html">helpful resources</a></li>
+<li><a class="" href="html_forms.html">html forms</a></li>
+<li><a class="" href="http_response_codes.html">http response codes</a></li>
+<li><a class="active" href="json_guide.html">json guide</a></li>
+<li><a class="" href="local-servers.html">local servers</a></li>
+<li><a class="" href="logical_gradation_of_developers.html">logical gradation of developers</a></li>
+<li><a class="" href="markdown.html">markdown</a></li>
+<li><a class="" href="namespace_review.html">namespace review</a></li>
+<li><a class="" href="notes_for_proff_nodejs_express.html">notes for proff nodejs express</a></li>
+<li><a class="" href="npm_quick_ref.html">npm quick ref</a></li>
+<li><a class="" href="pandoc_quick_ref.html">pandoc quick ref</a></li>
+<li><a class="" href="php_basics.html">php basics</a></li>
+<li><a class="" href="php_iterators.html">php iterators</a></li>
+<li><a class="" href="wget-ultimate-examples.html">wget ultimate examples</a></li>
+</ul>
+<li class="heading"><span>Packaging</span></li>
+<ul>
+<li><a class="" href="../Packaging/apt.html">apt</a></li>
+<li><a class="" href="../Packaging/composer.html">composer</a></li>
+</ul>
+<li class="heading"><span>ReviewQuestions</span></li>
+<ul>
+<li><a class="" href="../ReviewQuestions/strings_quotes.html">strings quotes</a></li>
+</ul>
+<li class="heading"><span>Symfony</span></li>
+<ul>
+<li><a class="" href="../Symfony/Encore.html">Encore</a></li>
+<li class="heading"><span>Symfonycasts</span></li>
+<ul>
+<li><a class="" href="../Symfony/Symfonycasts/Composer.html">Composer</a></li>
+<li><a class="" href="../Symfony/Symfonycasts/Dependency Injection and the art of services and containers.html">Dependency Injection and the art of services and containers</a></li>
+<li><a class="" href="../Symfony/Symfonycasts/Symfony 6 Fundamentals: Services, Config & Environments.html">Symfony 6 Fundamentals: Services, Config & Environments</a></li>
+</ul>
+<li><a class="" href="../Symfony/chapter5_symfonyCats.html">chapter5 symfonyCats</a></li>
+<li><a class="" href="../Symfony/symfony_and_http_fundamentals.html">symfony and http fundamentals</a></li>
+<li><a class="" href="../Symfony/symfony_basics.html">symfony basics</a></li>
+<li><a class="" href="../Symfony/twig_basics.html">twig basics</a></li>
+<li><a class="" href="../Symfony/twig_cheatsheet.html">twig cheatsheet</a></li>
+</ul>
+<li class="heading"><span>javascript</span></li>
+<ul>
+<li><a class="" href="../javascript/js_cheatsheet.html">js cheatsheet</a></li>
+</ul>
+</ul>
+	</nav>
+	<article>
+	<p><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true">https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true</a></p>
+<blockquote>
+<p>The Complete JSON Tutorial – Quickly Learn JSON</p>
+</blockquote>
+<h1 id="the-complete-json-tutorial-%E2%80%93-quickly-learn-json">The Complete JSON Tutorial – Quickly Learn JSON <a class="heading-anchor-permalink" href="#the-complete-json-tutorial-%E2%80%93-quickly-learn-json">#</a></h1>
+<p>JavaScript Object Notation or more commonly known as it’s abbreviated name JSON is extensively used throughout all kinds of applications. Its purpose is to streamline communications, most commonly between a browser and a server. Although having said this, it’s perfectly normal for this to work the opposite way around too.</p>
+<p>You will inevitably fall upon JSON one time or another during your developer journey and this article hopes to give you a content-know-how to work with it.</p>
+<h3 id="contents"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#contents"></a>Contents <a class="heading-anchor-permalink" href="#contents">#</a></h3>
+<ul>
+<li>Some Background</li>
+<li>A Basic Introduction</li>
+<li>JSON Data Types</li>
+<li>JSON Formatting</li>
+<li>Basic Example</li>
+<li>Nested JSON</li>
+<li>Advanced Example</li>
+<li>Managing JSON With JavaScript</li>
+<li>Working With The Console</li>
+<li>Summary</li>
+</ul>
+<h3 id="some-background"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#some-background"></a>Some Background <a class="heading-anchor-permalink" href="#some-background">#</a></h3>
+<p>JSON is a major part of the JavaScript programming language, it uses go far and beyond the imaginable eye. Discovered in March 2001 and Catering for over 40 languages, yes 40! JSON, with the right library, can be used in almost every programming language you’ve heard of.</p>
+<p>This technology even has its own <a href="https://www.json.org/">website</a>, which lists all the libraries that can bootstrap your application with JSON. In addition, there are some technical diagrams to provide an insight into how this great communication helper works.</p>
+<h3 id="a-basic-introduction"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#a-basic-introduction"></a>A Basic Introduction <a class="heading-anchor-permalink" href="#a-basic-introduction">#</a></h3>
+<p>JSON is quite easy to use when you get your head around it, it’s nothing more than simple text structured in a certain way. If you’ve never seen it in the flesh before, then this is a good time to show a small example. Here is what it can look like –</p>
+<pre><code>    {
+        &quot;SiteName&quot;: &quot;CodeWall&quot;,
+        &quot;ArticleName&quot;: &quot;JSON Tutorials&quot;,
+        &quot;Revision&quot;: 1
+    }
+</code></pre>
+<p>As you can see from the example, it’s just as stated, simple text, formatted with quotations, separated by colons and comma’s and completely wrapped in some braces. It can get more advanced with bigger data, but we will go through that in detail within this article too.</p>
+<h3 id="json-data-types"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#json-data-types"></a>JSON Data Types <a class="heading-anchor-permalink" href="#json-data-types">#</a></h3>
+<p>JavaScript Object Notation can handle nearly every data type you could possibly need it too. This, of course, makes it an extremely powerful tool, being able to handle arrays and objects in itself is super-cool. Let’s go through the data types with some small examples showing how they would look in a working application.</p>
+<p><strong>String</strong></p>
+<pre><code>    {
+        &quot;StringDataType&quot;: &quot;String&quot;
+    }
+</code></pre>
+<p><strong>Object</strong></p>
+<pre><code>    {
+        &quot;ObjectDataType&quot;: {
+            &quot;myObj&quot;: &quot;ObjectData&quot;
+        }
+    }
+</code></pre>
+<p><strong>Array</strong></p>
+<pre><code>    {
+        &quot;ArrayDataType&quot;: [1, 2, 3, 4]
+    }
+</code></pre>
+<p><strong>Number</strong></p>
+<p><strong>Boolean</strong></p>
+<pre><code>    {
+        &quot;BooleanTrueDataType&quot;: true,
+        &quot;BooleanFalseDataType&quot;: false
+    }
+</code></pre>
+<p><strong>Date</strong></p>
+<pre><code>    {
+        &quot;DateStringDataType&quot;: &quot;2011-07-14 19:43:37 +0100&quot;,
+        &quot;JavaScriptDateDataType&quot;: new Date(1310669017000)
+    }
+</code></pre>
+<h3 id="json-formatting"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#json-formatting"></a>JSON Formatting <a class="heading-anchor-permalink" href="#json-formatting">#</a></h3>
+<p>There are some strict rules when it comes to formatting JavaScript Object Notation and if not adhered too, expect your code to fall over.</p>
+<p><strong>Rule #1. Key/Identifier &amp; Value</strong></p>
+<p>JSON consists of 2 main elements, a key, and a value. No matter the data type, it needs to be in this format. The key you specify will ultimately be used to access the value later on within your application or on the alternative consumer end.</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--0nzpwfth--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/key-value-json.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0nzpwfth--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/key-value-json.jpg" alt="key value json"></a></p>
+<p><strong>Rule #2. Key/Identifier Double Quoted</strong></p>
+<p>Yes, you may get away with it in JavaScript, but with JSON, you can’t. Every identifier or key you specify in a JSON object must be double-quoted, essentially making it a <code>String</code> type. It may be hard to rid habits of not having to do this, but it soon falls into place.</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--XEV8BdGx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/double-quote-json.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--XEV8BdGx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/double-quote-json.jpg" alt="double quoted format"></a></p>
+<p><strong>Rule #3. Wrap Objects In Curly Braces</strong></p>
+<p>Whether you have one object or fifty in your JSON code, each object needs to be wrapped inside curly braces, specifying the start and the end of each object inside. This is extremely important, especially to interpreters, if these are missed, you will soon be alerted about it!</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--WfUuomL9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/object-curly-braces.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--WfUuomL9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/object-curly-braces.jpg" alt="object curly braces"></a></p>
+<p><strong>Rule #4. Separate Key/Value by Colons</strong></p>
+<p>Data within JSON must be separated out, to do this, a simple colon is sufficient, it goes straight after the key or identifier statement and just before the value. This is another imperative concept which you will see the importance when logging data to the console, which is explained later in this tutorial.</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--2pHtGbDy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/key-value-separator.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--2pHtGbDy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/key-value-separator.jpg" alt="key value separator"></a></p>
+<p><strong>Rule #5. Arrays Are To Be Treated Like Arrays</strong></p>
+<p>When using arrays within JSON, treat them exactly the same as you would do in normal JavaScript syntax. Whether that be a string or numeric array, the same rules apply.</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--5nb6RTvg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/json-array-data-type-example.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--5nb6RTvg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/json-array-data-type-example.jpg" alt="array data type example"></a></p>
+<p><strong>Rule #6. Encapsulate Objects With Square Brackets (Array)</strong></p>
+<p>Multiple objects must sit in an array, giving you what is called an Array Of Objects, this will be used when you have advanced data that you need to communicate to the front-end or the back-end. Notice the bracket-syntax highlighted in blue within the image below.</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--V9AU1Zgg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/object-array-example.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--V9AU1Zgg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/object-array-example.jpg" alt="object array example"></a></p>
+<p><strong>Rule #7. Objects &amp; Data Separated By Commas</strong></p>
+<p>No doubt you will end up working with multiple object JSON in your lifetime, they must be separated correctly, with a simple comma each time. Similarly, data must be separated out with commas too, let’s see this in action with a bit more of an advanced JSON snippet. The important syntax is highlighted in blue for visual understanding.</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--i0r5m71u--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/comma-separation-example.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i0r5m71u--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/comma-separation-example.jpg" alt="comma separation example"></a></p>
+<h3 id="basic-example"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#basic-example"></a>Basic Example <a class="heading-anchor-permalink" href="#basic-example">#</a></h3>
+<p>Now that we’ve gone through the main rules of JSON, it’s time for an example with a range of data types. Feel free to use the following code for your own learning, it will be a great reference or starting point. In this example, these four data-types are present –</p>
+<ul>
+<li>
+<p>String</p>
+</li>
+<li>
+<p>Integer</p>
+</li>
+<li>
+<p>Decimal</p>
+</li>
+<li>
+<p>Boolean</p>
+<pre><code>{
+    &quot;Article&quot;: &quot;Tutorial&quot;,
+    &quot;Author&quot;: &quot;Dan Englishby&quot;,
+    &quot;YearPublished&quot;: 2018,
+    &quot;IsPublished&quot;: true,
+    &quot;AverageWordsPerSentce&quot;: 20.3
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="nesting"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#nesting"></a>Nesting <a class="heading-anchor-permalink" href="#nesting">#</a></h3>
+<p>Ok, so JSON can become pretty complicated in terms of data-load and that’s why nesting is a key factor to this technology. When you have tons of data to communicate, nesting is a beautiful art. Within the following example, nesting down to two levels is shown because, in theory, nesting is endless. Therefore, knowing how to do it will inevitably come in handy.</p>
+<p><strong>How do we nest objects?</strong></p>
+<p>Nesting objects are achieved by creating an Array-of-objects within a JSON property. See the following example</p>
+<pre><code>    {
+        &quot;OuterObject&quot;: [{
+            &quot;NestedObjects&quot;: [{
+                    &quot;SomeName&quot;: &quot;SomeValue&quot;
+                },
+                {
+                    &quot;SomeName&quot;: &quot;SomeValue&quot;
+                },
+                {
+                    &quot;SomeName&quot;: &quot;SomeValue&quot;
+                }
+            ]
+        }]
+    }
+</code></pre>
+<p><strong>How do we nest arrays?</strong></p>
+<p>Similarly, we can nest arrays, and it’s pretty simple too. The only problem with doing it, is you lose the ability to specify the array’s data with identifier or keys. This is because the nested array will be identified with a numeric index rather than a key-value pair.</p>
+<pre><code>    {
+        &quot;OuterObject&quot;: [{
+            &quot;NestedArray&quot;: [
+                [
+                    &quot;SomeValue&quot;
+                ],
+                [
+                    &quot;SomeValue&quot;
+                ],
+                [
+                    &quot;SomeValue&quot;
+                ]
+            ]
+        }]
+    }
+</code></pre>
+<h3 id="advanced-examples"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#advanced-examples"></a>Advanced Examples <a class="heading-anchor-permalink" href="#advanced-examples">#</a></h3>
+<p>See the following examples that use nested concepts to section out data. The property <strong>Articles</strong> holds a nested set of article names, in addition, it holds the next nested set of data, <strong>Shared On</strong>, which again nests social network names.</p>
+<p><strong>Advanced Example #1</strong></p>
+<pre><code>    {
+        &quot;Category&quot;: &quot;Tutorials&quot;,
+        &quot;Articles&quot;: [{
+                &quot;Name&quot;: &quot;ChartJS Lesson 1&quot;,
+                &quot;Shared On&quot;: [{
+                        &quot;SocialNetwork&quot;: &quot;Facebook&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Twitter&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Google+&quot;
+                    }
+                ]
+            },
+            {
+                &quot;Name&quot;: &quot;ChartJS Lesson 2&quot;,
+                &quot;Shared On&quot;: [{
+                        &quot;SocialNetwork&quot;: &quot;Facebook&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Twitter&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Google+&quot;
+                    }
+                ]
+
+            },
+            {
+                &quot;Name&quot;: &quot;ChartJS Lesson 3&quot;,
+                &quot;Shared On&quot;: [{
+                        &quot;SocialNetwork&quot;: &quot;Facebook&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Twitter&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Google+&quot;
+                    }
+                ]
+            },
+            {
+                &quot;Name&quot;: &quot;ChartJS Lesson 4&quot;,
+                &quot;Shared On&quot;: [{
+                        &quot;SocialNetwork&quot;: &quot;Facebook&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Twitter&quot;
+                    },
+                    {
+                        &quot;SocialNetwork&quot;: &quot;Google+&quot;
+                    }
+                ]
+            }
+        ]
+    }
+</code></pre>
+<p>The above example shows how to nest objects, but you can also nest arrays too, having an array-of-arrays is perfectly normal. It all depends on what your specific needs are. The following example shows the <strong>Shared On</strong> property holding an array of social network names.</p>
+<p><strong>Advanced Example 2</strong></p>
+<pre><code>    {
+        &quot;Category&quot;: &quot;Tutorials&quot;,
+        &quot;Articles&quot;: [{
+                &quot;Name&quot;: &quot;ChartJS Lesson 1&quot;,
+                &quot;Shared On&quot;: [
+                    [&quot;Facebook&quot;],
+                    [&quot;Twitter&quot;],
+                    [&quot;Google+&quot;]
+                ]
+            }
+        ]
+    }
+</code></pre>
+<h3 id="managing-json-with-javascript"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#managing-json-with-javascript"></a>Managing JSON With JavaScript <a class="heading-anchor-permalink" href="#managing-json-with-javascript">#</a></h3>
+<p>JavaScript works super-fluently with JSON, which of course it does, JS did create it! Managing data within JS can be done in numerous ways, from storing variables to finally accessing the data. In this section, we will learn how to do each one.</p>
+<p><strong>Storing JSON In A JavaScript Variable</strong></p>
+<p>If you’ve already worked with JavaScript before, I know this will be teaching you to suck eggs, but for the readers who haven’t see the example below –</p>
+<p><strong>Storing as a variable</strong></p>
+<pre><code>    var json = {
+        &quot;Article&quot;: &quot;Tutorial&quot;,
+        &quot;Author&quot;: &quot;Dan Englishby&quot;,
+        &quot;YearPublished&quot;: 2018,
+        &quot;IsPublished&quot;: true,
+        &quot;AverageWordsPerSentce&quot;: 20.3
+    };
+</code></pre>
+<p>Yep, it’s as simple as that, you’ve just stored your first JSON data-set in a JS variable!</p>
+<p><strong>Accessing the data</strong></p>
+<p>Accessing JSON values can be done in two ways</p>
+<ul>
+<li>Dot Notation Style</li>
+<li>Bracket Notation Style</li>
+</ul>
+<p><strong>Dot Notation Example</strong></p>
+<p>With the variable we created in the last example, we can now access the values with the following code.</p>
+<pre><code>    var articleName = json.Article; // variable is now &quot;Tutorial&quot;
+</code></pre>
+<p><strong>Bracket Notation Example</strong></p>
+<pre><code>    var articleName = json[&quot;Article&quot;]; // variable is now &quot;Tutorial&quot;
+</code></pre>
+<h3 id="working-with-the-console"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#working-with-the-console"></a>Working With The Console <a class="heading-anchor-permalink" href="#working-with-the-console">#</a></h3>
+<p>Visualizing the data, you create in JSON is quite important to understand it even further, once you see it properly logged into a console, it makes such a difference. All we need to successfully log data to the console is first, a browser with the console facility and secondly some JavaScript.</p>
+<p>Browsers such as Google Chrome, Internet Explorer, Firefox all have this functionality, so If you haven’t got one of them already, go download one and then come back to this part of the tutorial.</p>
+<p><strong>How do I see the console?</strong></p>
+<p>The good news here is that to expose the console in most browsers is done by the exact same method. Use the following steps to find your console.</p>
+<ol>
+<li>Right click on the web page.</li>
+<li>Find the Inspect Element option.</li>
+<li>Click it.</li>
+<li>After the new window opens, find the sub-headed Console window and click it.</li>
+</ol>
+<p>See chromes console in the image below –</p>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--lnoM4gTa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/chrome-console-example.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lnoM4gTa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/chrome-console-example.jpg" alt="chrome console example"></a></p>
+<p><strong>Logging to the console</strong></p>
+<p>Now we’ve discovered the console, let’s use it, add the following code to your JavaScript and reload the page.</p>
+<pre><code>    var json = {
+        &quot;Article&quot;: &quot;Tutorial&quot;,
+        &quot;Author&quot;: &quot;Dan Englishby&quot;,
+        &quot;YearPublished&quot;: 2018,
+        &quot;IsPublished&quot;: true,
+        &quot;AverageWordsPerSentce&quot;: 20.3
+    };
+    console.log(json);
+</code></pre>
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--iJ03ckCQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/console-log-example.jpg"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--iJ03ckCQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/console-log-example.jpg" alt="console log example"></a></p>
+<p>As you can see, the JSON created within the JavaScript has been nicely logged to the Google Chrome console. It’s sectioned and colored beautifully so you can quickly-visually understand it.</p>
+<h3 id="summary"><a href="https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#summary"></a>Summary <a class="heading-anchor-permalink" href="#summary">#</a></h3>
+<p>Within this tutorial, all aspects of working with JSON were covered, hopefully giving you the knowledge to go and play with it and learn even more. With a little practice, you will become fluent with it too and then start daring to work with some really complicated nested JSON. As I mentioned before, knowing these concepts will be invaluable to your tool-set because there are so many libraries and API’s that use it.</p>
+<p>I’ve logged all the examples within this tutorial to the console, so you can see them all in their full glory. Right-click, inspect element and click the console window to see them.</p>
+<p>Lastly, a great online tool that is extremely helpful in verifying that JSON is syntactically correct is the <a href="https://jsonlint.com/">JSONLint interface</a>, it’s free and very easy to use.</p>
+<p>Hope it helps, thanks for reading!</p>
+<p>This post is cross-posted from my blog - <a href="https://www.codewall.co.uk/the-complete-json-tutorial-quickly-learn-json/">CodeWall JSON Tutorial</a></p>
+
+	</article>
+	<script src="./prism.css"></script>
+	<script src="./prism.js"></script>
+	<script>prism.Highlight();</script>
+</body>
+
+</html>
