@@ -1,5 +1,16 @@
-/* my site style */
+*{
+ box-sizing: border-box;
+}
+body{
+ padding:1rem;
+}
+h1 {
+ color: white;
+ background-color: blue;
+ 
+}
 
-h1{
- color:green;
+pre {
+ border: 1px dashed red;
+ background-color: black;
 }
