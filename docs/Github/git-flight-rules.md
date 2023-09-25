@@ -1,1 +1,0 @@
-Forked at : (https://farisubuntu.github.io/git-flight-rules/)
