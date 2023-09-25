@@ -1,5 +1,13 @@
+*{
+ box-sizing: border-box;
+}
+body{
+ padding:1rem;
+}
 h1 {
- color: rgb(255, 191, 41);
+ color: white;
+ background-color: blue;
+ 
 }
 
 pre {
