@@ -67,7 +67,7 @@ commands can be:
 ### 1. Compiled applications
 
 - **compiled apps** are binary executable files
-- usually in path such `/usr/bin` and many have the same name as bash built-in commands names (`/usr/bin/echo`)
+- usually in path such `/usr/bin` and many have the same name as bash built-in commands name - ex. (`/usr/bin/echo`)
 ### 2. Built-in bash commands
 - can only be used to display the output within a terminal shell or shell script.
 - include `cd, pwd, echo, read, logout, printf, let, time,` and `ulimit`.
