@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Bash Build System",
+		"DevDocs",
+		"Emmet",
+		"GitHub Flavored Markdown Preview",
+		"HTML-CSS-JS Prettify",
+		"LSP-bash",
+		"Markdown Extended",
+		"MarkdownLivePreview",
+		"MarkdownPreview",
+		"Monokai Blueberry Color Scheme",
+		"Package Control",
+		"PackageSync",
+		"Path Tools",
+		"PHP Codebeautifier",
+		"Phpcs",
+		"Print to HTML",
+		"Rohingya Dark color scheme",
+		"Terminal",
+		"Theme - Delta",
+	],
+}
