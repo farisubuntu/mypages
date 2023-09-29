@@ -103,7 +103,7 @@ Sometime you may need to substitute the result of a command as a portion of anot
 It can be done in two ways:
 
  - By enclosing the inner command in `$( )` method
- - By enclosing the inner command with backticks `(`)` (backticks is deprecated)
+ - By enclosing the inner command with backticks (\`) (backticks is deprecated)
 
 ## Environment Variables
 
