@@ -1,4 +1,10 @@
-LinuxFoundationX LFS101x
+---
+created: 2023-10-01T17:02:02 (UTC +03:00)
+tags: [edx,LFS101x,bash,linux,script,shell,sh,echo,linux]
+source: https://farisubunt.github.io/mypages
+author:
+---
+
 # Introduction to Linux
 
 
