@@ -2,7 +2,7 @@
 created: 2023-10-01T17:02:02 (UTC +03:00)
 tags: [reference,cheatsheet,code table,snippets,linux,script,shell,sh,echo,linux]
 source: https://quickref.me/bash#getting-started
-author: 
+author:
 ---
 
 # Bash Cheat Sheet & Quick Reference
@@ -11,6 +11,38 @@ author:
 > This is a quick reference cheat sheet to getting started with linux bash shell scripting.
 
 ---
+
+## [#](Basic Concepts)
+### [#](quoting)
+
+### Types of quoting
+
+There are three standard types of quotes (or four if you count backslash escaping), and two nonstandard Bash extensions.
+
+- Single quotes: '...' removes the special meaning of every character between the quotes. Everything inside single quotes becomes a literal string. The only character that you can't safely enclose in single quotes is a single quote.
+
+- Double quotes: "..." prevents some substitutions but allows others. Every substitution that begins with a dollar sign $ is performed, as is the legacy `...` (backtick) command substitution. Backslash escaping is also performed. No word splitting or filename expansion is performed.
+
+- Backticks: `...` is the legacy command substitution syntax; deprecated in favor of $(...) but still permitted for historical reasons. See FAQ 082 for details.
+
+- Backslash: Putting \ in front of a metacharacter removes its special meaning. This works inside double quotes, or in the absence of quotes. It does not work inside single quotes.
+
+- $'...' : Contents are a single word with interpretation of backslash escape sequences such as \n for newline, \t for tab, and \xnn for bytes specified in hexadecimal. These may be used to specify a text representation of arbitrary data. No current implementation supports a context where these are not interpreted as NUL-terminated C strings.
+
+- $"..." : This is a Bash extension. It is used for localization support and will not be covered on this page.
+
+### Effects of Quoting
+[from: ](http://mywiki.wooledge.org/Quotes)
+
+**Preserve unescaped metacharacters**
+**Prevent field splitting and ignore glob pattern characters**
+**Expand argument lists**
+
+### When should you use **Quote**?
+
+The basic rule of thumb is that you should double-quote every expansion. This prevents unwanted word splitting and globbing. When in doubt, quote it.
+---
+
 ## [#](https://quickref.me/bash#getting-started)Getting Started
 
 ### [#](https://quickref.me/bash#hello-sh)hello.sh
@@ -667,13 +699,13 @@ shopt -s nullglob
 shopt -s failglob  
 
 # Case insensitive globs
-shopt -s nocaseglob 
+shopt -s nocaseglob
 
-# Wildcards match dotfiles 
+# Wildcards match dotfiles
 # ("*.sh" => ".foo.sh")
 shopt -s dotglob    
 
-# Allow ** for recursive matches 
+# Allow ** for recursive matches
 # ('lib/**/*.rb' => 'lib/a/b/c.rb')
 shopt -s globstar   
 ```

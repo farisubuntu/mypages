@@ -129,7 +129,7 @@ echo {$from..$to} # => {$from..$to}
 # Observe that the following are equivalent:
 echo "I'm in $(pwd)" # shell execution, exec `pwd` and interpolates output
 echo "I'm in $PWD" # interpolates the variable
-echo "I'm in `pwd`" # same as shell execution
+echo "I'm in `pwd`" # shell execution
 
 # If you get too much output in your terminal, or from a script, the command
 # `clear` clears your screen:
