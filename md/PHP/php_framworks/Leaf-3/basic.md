@@ -92,17 +92,3 @@ $app->get('/notes', function () {
 `$ leaf install db` or `$ composer require leafs/db`
 
 ## Conntecting to db. (place it before `routes` so you can use the `$db` everywhere.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
