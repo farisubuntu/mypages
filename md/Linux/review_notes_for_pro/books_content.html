@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <title>Notes For Proffesionals - Bash</title>
+</head>
+
+<body>
+ <div class="w3-sidebar sidenav">
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 1: Getting started with Bash</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-11"> Hello World</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-12"> Hello World Using Variables</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-13"> Hello World with User Input</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-14"> Importance of Quoting in Strings</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-15"> Viewing information for Bash built-ins</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-16"> Hello World in "Debug" mode</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-17"> Handling Named Arguments</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 2: Script shebang</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-21"> Env shebang</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-22"> Direct shebang</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-23"> Other shebangs</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 3: Navigating directories</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-31"> Absolute vs relative directories</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-32"> Change to the last directory</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-33"> Change to the home directory</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-34"> Change to the Directory of the Script</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 4: Listing Files</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-41"> List Files in a Long Listing Format</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-42"> List the Ten Most Recently Modified Files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-43"> List All Files Including Dotfiles</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-44"> List Files Without Using `ls`</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-45"> List Files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-46"> List Files in a Tree-Like Format</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-47"> List Files Sorted by Size</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 5: Using cat</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-51"> Concatenate files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-52"> Printing the Contents of a File</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-53"> Write to a file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-54"> Show non printable characters</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-55"> Read from standard input</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-56"> Display line numbers with output</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-57"> Concatenate gzipped files</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 6: Grep</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-61"> How to search a file for a pattern</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 7: Aliasing</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-71"> Bypass an alias</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-72"> Create an Alias</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-73"> Remove an alias</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-74"> The BASH_ALIASES is an internal bash assoc array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-75"> Expand alias</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-76"> List all Aliases</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 8: Jobs and Processes</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-81"> Job handling</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-82"> Check which process running on specific port</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-83"> Disowning background job</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-84"> List Current Jobs</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-85"> Finding information about a running process</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-86"> List all processes</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 9: Redirection</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-91"> Redirecting standard output</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-92"> Append vs Truncate</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-93"> Redirecting both STDOUT and STDERR</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-94"> Using named pipes</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-95"> Redirection to network addresses</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-96"> Print error messages to stderr</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-97"> Redirecting multiple commands to the same file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-98"> Redirecting STDIN</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-99"> Redirecting STDERR</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-910"> STDIN, STDOUT and STDERR explained</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 10: Control Structures</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-101"> Conditional execution of command lists</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-102"> If statement</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-103"> Looping over an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-104"> Using For Loop to List Iterate Over Numbers</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-105"> continue and break</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-106"> Loop break</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-107"> While Loop</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-108"> For Loop with C-style syntax</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-109"> Until Loop</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1010"> Switch statement with case</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1011"> For Loop without a list-of-words parameter</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 11: true, false and : commands</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-111"> Infinite Loop</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-112"> Function Return</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-113"> Code that will always/never be executed</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 12: Arrays</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-121"> Array Assignments</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-122"> Accessing Array Elements</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-123"> Array Modification</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-124"> Array Iteration</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-125"> Array Length</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-126"> Associative Arrays</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-127"> Looping through an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-128"> Destroy, Delete, or Unset an Array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-129"> Array from string</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1210"> List of initialized indexes</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1211"> Reading an entire file into an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1212"> Array insert function</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 13: Associative arrays</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-131"> Examining assoc arrays</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 14: Functions</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-141"> Functions with arguments</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-142"> Simple Function</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-143"> Handling flags and optional parameters</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-144"> Print the function definition</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-145"> A function that accepts named parameters</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-146"> Return value from a function</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-147"> The exit code of a function is the exit code of its last command</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 15: Bash Parameter Expansion</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-151"> Modifying the case of alphabetic characters</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-152"> Length of parameter</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-153"> Replace pattern in string</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-154"> Substrings and subarrays</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-155"> Delete a pattern from the beginning of a string</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-156"> Parameter indirection</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-157"> Parameter expansion and filenames</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-158"> Default value substitution</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-159"> Delete a pattern from the end of a string</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1510"> Munging during expansion</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-1511"> Error if variable is empty or unset</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 16: Copying (cp)</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-161"> Copy a single file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-162"> Copy folders</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 17: Find</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-171"> Searching for a file by name or extension</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-172"> Executing commands against a found file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-173"> Finding file by access / modification time</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-174"> Finding files according to size</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-175"> Filter the path</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-176"> Finding files by type</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-177"> Finding files by specific extension</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 18: Using sort</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-181"> Sort command output</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-182"> Make output unique</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-183"> Numeric sort</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-184"> Sort by keys</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 19: Sourcing</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-191"> Sourcing a file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-192"> Sourcing a virtual environment</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 20: Here documents and here strings</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-201"> Execute command with here document</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-202"> Indenting here documents</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-203"> Create a file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-204"> Here strings</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-205"> Run several commands with sudo</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-206"> Limit Strings</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 21: Quoting</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-211"> Double quotes for variable and command substitution</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-212"> Dierence between double quote and single quote</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-213"> Newlines and control characters</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-214"> Quoting literal text</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 22: Conditional Expressions</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-221"> File type tests</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-222"> String comparison and matching</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-223"> Test on exit status of a command</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-224"> One liner test</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-225"> File comparison</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-226"> File access tests</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-227"> Numerical comparisons</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 23: Scripting with Parameters</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-231"> Multiple Parameter Parsing</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-232"> Argument parsing using a for loop</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-233"> Wrapper script</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-234"> Accessing Parameters</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-235"> Split string into an array in Bash</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 24: Bash history substitutions</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-241"> Quick Reference</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-242"> Repeat previous command with sudo</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-243"> Search in the command history by pattern</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-244"> Switch to newly created directory with !#:N</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-245"> Using !$</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-246"> Repeat the previous command with a substitution</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 25: Math</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-251"> Math using dc</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-252"> Math using bash capabilities</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-253"> Math using bc</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-254"> Math using expr</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 26: Bash Arithmetic</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-261"> Simple arithmetic with (( ))</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-262"> Arithmetic command</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-263"> Simple arithmetic with expr</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 27: Scoping</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-271"> Dynamic scoping in action</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 28: Process substitution</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-281"> Compare two files from the web</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-282"> Feed a while loop with the output of a command</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-283"> Concatenating files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-284"> Stream a file through multiple programs at once</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-285"> With paste command</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-286"> To avoid usage of a sub-shell</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 29: Programmable completion</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-291"> Simple completion using function</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-292"> Simple completion for options and filenames</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 30: Customizing PS1</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-301"> Colorize and customize terminal prompt</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-302"> Show git branch name in terminal prompt</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-303"> Show time in terminal prompt</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-304"> Show a git branch using PROMPT_COMMAND</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-305"> Change PS1 prompt</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-306"> Show previous command return status and time</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 31: Brace Expansion</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-311"> Modifying filename extension</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-312"> Create directories to group files by month and year</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-313"> Create a backup of dotfiles</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-314"> Use increments</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-315"> Using brace expansion to create lists</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-316"> Make Multiple Directories with Sub-Directories</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 32: getopts : smart positional-parameter parsing</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-321"> pingnmap</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 33: Debugging</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-331"> Checking the syntax of a script with "-n"</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-332"> Debugging using bashdb</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-333"> Debugging a bash script with "-x"</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 34: Pattern matching and regular expressions</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-341"> Get captured groups from a regex match against a string</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-342"> Behaviour when a glob does not match anything</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-343"> Check if a string matches a regular expression</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-344"> Regex matching</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-345"> The * glob</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-346"> The ** glob</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-347"> The ? glob</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-348"> The [ ] glob</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-349"> Matching hidden files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3410"> Case insensitive matching</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3411"> Extended globbing</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 35: Change shell</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-351"> Find the current shell</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-352"> List available shells</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-353"> Change the shell</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 36: Internal variables</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-361"> Bash internal variables at a glance</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-362"> $@</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-363"> $#</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-364"> $HISTSIZE</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-365"> $FUNCNAME</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-366"> $HOME</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-367"> $IFS</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-368"> $OLDPWD</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-369"> $PWD</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3610"> $1 $2 $3 etc</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3611"> $*</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3612"> $!</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3613"> $?</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3614"> $$</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3615"> $RANDOM</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3616"> $BASHPID</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3617"> $BASH_ENV</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3618"> $BASH_VERSINFO</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3619"> $BASH_VERSION</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3620"> $EDITOR</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3621"> $HOSTNAME</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3622"> $HOSTTYPE</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3623"> $MACHTYPE</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3624"> $OSTYPE</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3625"> $PATH</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3626"> $PPID</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3627"> $SECONDS</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3628"> $SHELLOPTS</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3629"> $_</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3630"> $GROUPS</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3631"> $LINENO</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3632"> $SHLVL</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3633"> $UID</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 37: Job Control</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-371"> List background processes</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-372"> Bring a background process to the foreground</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-373"> Restart stopped background process</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-374"> Run command in background</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-375"> Stop a foreground process</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 38: Case statement</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-381"> Simple case statement</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-382"> Case statement with fall through</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-383"> Fall through only if subsequent pattern(s) match</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 39: Read a file (data stream, variable) line-by-line (and/or field-by-field)?</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-391"> Looping through a file line by line</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-392"> Looping through the output of a command field by field</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-393"> Read lines of a file into an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-394"> Read lines of a string into an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-395"> Looping through a string line by line</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-396"> Looping through the output of a command line by line</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-397"> Read a file field by field</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-398"> Read a string field by field</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-399"> Read fields of a file into an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3910"> Read fields of a string into an array</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-3911"> Reads file (/etc/passwd) line by line and field by field</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 40: File execution sequence</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-401"> profile vs bash_profile (and bash_login)</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 41: Splitting Files</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-411"> Split a file</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 42: File Transfer using scp</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-421"> scp transferring file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-422"> scp transferring multiple files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-423"> Downloading file using scp</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 43: Pipelines</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-431"> Using |&</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-432"> Show all processes paginated</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-433"> Modify continuous output of a command</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 44: Managing PATH environment variable</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-441"> Add a path to the PATH environment variable</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-442"> Remove a path from the PATH environment variable</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 45: Word splitting</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-451"> What, when and Why?</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-452"> Bad eects of word splitting</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-453"> Usefulness of word splitting</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-454"> Splitting by separator changes</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-455"> Splitting with IFS</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-456"> IFS & word splitting</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 46: Avoiding date using printf</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-461"> Get the current date</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-462"> Set variable to current time</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 47: Using "trap" to react to signals and system events</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-471"> Introduction: clean up temporary files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-472"> Catching SIGINT or Ctl+C</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-473"> Accumulate a list of trap work to run at exit</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-474"> Killing Child Processes on Exit</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-475"> react on change of terminals window size</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 48: Chain of commands and operations</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-481"> Counting a text pattern ocurrence</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-482"> transfer root cmd output to user file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-483"> logical chaining of commands with && and ||</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-484"> serial chaining of commands with semicolon</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-485"> chaining commands with |</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 49: Type of Shells</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-491"> Start an interactive shell</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-492"> Detect type of shell</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-493"> Introduction to dot files</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 50: Color script output (cross-platform)</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-501"> color-outputsh</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 51: co-processes</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-511"> Hello World</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 52: Typing variables</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-521"> declare weakly typed variables</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 53: Jobs at specific times</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-531"> Execute job once at specific time</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-532"> Doing jobs at specified times repeatedly using systemdtimer</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 54: Handling the system prompt</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-541"> Using the PROMPT_COMMAND envrionment variable</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-542"> Using PS2</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-543"> Using PS3</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-544"> Using PS4</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-545"> Using PS1</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 55: The cut command</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-551"> Only one delimiter character</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-552"> Repeated delimiters are interpreted as empty fields</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-553"> No quoting</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-554"> Extracting, not manipulating</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 56: Bash on Windows 10</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-561"> Readme</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 57: Cut Command</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-571"> Show the first column of a file</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-572"> Show columns x to y of a file</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 58: global and local variables</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-581"> Global variables</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-582"> Local variables</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-583"> Mixing the two together</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 59: CGI Scripts</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-591"> Request Method: GET</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-592"> Request Method: POST /w JSON</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 60: Select keyword</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-601"> Select keyword can be used for getting input argument in a menu format</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 61: When to use eval</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-611"> Using Eval</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-612"> Using Eval with Getopt</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 62: Networking With Bash</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-621"> Networking commands</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 63: Parallel</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-631"> Parallelize repetitive tasks on list of files</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-632"> Parallelize STDIN</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="chatper w3-container">
+   <header class="w3-container w3-teal chapter-header">Chapter 64: Decoding URL</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-641"> Simple example</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-642"> Using printf to decode a string</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 65: Design Patterns</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-651"> The Publish/Subscribe (Pub/Sub) Pattern</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container chapter">
+   <header class="w3-container w3-teal chapter-header">Chapter 66: Pitfalls</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-661"> Whitespace When Assigning Variables</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-662"> Failed commands do not stop script execution</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-663"> Missing The Last Line in a File</section>
+   </div>
+  </div> <!-- end of chapter -->
+
+  <div class="w3-container appendix-a">
+   <header class="w3-container w3-teal chapter-header">Appendix A: Keyboard shortcuts</header>
+   <div class="w3-container section-wrapper">
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-A1"> Editing Shortcuts</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-A2"> Recall Shortcuts</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-A3"> Macros</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-A4"> Custome Key Bindings</section>
+    <section class="w3-card-4 w3-yellow w3-border section" id="s-A5"> Job Control</section>
+   </div>
+  </div> <!-- end of chapter -->
+ </div> <!-- end of div.sidenav -->
+</body>
+
+</html>
