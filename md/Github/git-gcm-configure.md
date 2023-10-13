@@ -75,9 +75,10 @@ On POSIX platforms the newly created store directory will have permissions set s
 
 Now to continue:
 
-## [Checking for existing GPG keys] (https://docs.github.com/en/authentication/managing-commit-signature-verification/checking-for-existing-gpg-keys)
+- [Checking for existing GPG keys](https://docs.github.com/en/authentication/managing-commit-signature-verification/checking-for-existing-gpg-keys)
 
 then :
 
-## [Adding a GPG key to your GitHub account] (https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
+- [Adding a GPG key to your GitHub account](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
 
+- [Then tell your git with sign key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)

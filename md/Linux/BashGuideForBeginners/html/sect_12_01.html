@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Signals</title>
+    <meta
+      name="GENERATOR"
+      content="Modular DocBook HTML Stylesheet Version 1.7"
+    />
+    <link rel="HOME" title="Bash Guide for Beginners" href="index.html" />
+    <link rel="UP" title="Catching signals" href="chap_12.html" />
+    <link rel="PREVIOUS" title="Catching signals" href="chap_12.html" />
+    <link rel="NEXT" title="Traps" href="sect_12_02.html" />
+  </head>
+  <body
+    class="sect1"
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#0000FF"
+    vlink="#840084"
+    alink="#0000FF"
+  >
+    <div class="NAVHEADER">
+      <table
+        summary="Header navigation table"
+        width="100%"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tr>
+          <th colspan="3" align="center">Bash Guide for Beginners</th>
+        </tr>
+        <tr>
+          <td width="10%" align="left" valign="bottom">
+            <a href="chap_12.html" accesskey="P">Prev</a>
+          </td>
+          <td width="80%" align="center" valign="bottom">
+            Chapter 12. Catching signals
+          </td>
+          <td width="10%" align="right" valign="bottom">
+            <a href="sect_12_02.html" accesskey="N">Next</a>
+          </td>
+        </tr>
+      </table>
+      <hr align="LEFT" width="100%" />
+    </div>
+    <div class="sect1">
+      <h1 class="sect1"><a name="sect_12_01"></a>12.1. Signals</h1>
+      <div class="sect2">
+        <h2 class="sect2"><a name="sect_12_01_01"></a>12.1.1. Introduction</h2>
+        <div class="sect3">
+          <h3 class="sect3">
+            <a name="sect_12_01_01_01"></a>12.1.1.1. Finding the signal man page
+          </h3>
+          <p>
+            Your system contains a man page listing all the available signals,
+            but depending on your operating system, it might be opened in a
+            different way. On most Linux systems, this will be
+            <strong class="command">man <tt CLASS="option">7</tt> signal</strong>. When in
+            doubt, locate the exact man page and section using commands like
+          </p>
+          <p>
+            <strong class="command"
+              >man <tt CLASS="option">-k</tt> signal | grep
+              <tt CLASS="option">list</tt></b
+            >
+          </p>
+          <p>or</p>
+          <p>
+            <strong class="command"
+              >apropos signal | grep <tt CLASS="option">list</tt></b
+            >
+          </p>
+          <p>Signal names can be found using <strong class="command">kill -l</strong>.</p>
+        </div>
+        <div class="sect3">
+          <h3 class="sect3">
+            <a name="sect_12_01_01_02"></a>12.1.1.2. Signals to your Bash shell
+          </h3>
+          <p>
+            In the absence of any traps, an interactive Bash shell ignores
+            <em>SIGTERM</em> and <em>SIGQUIT</em>. <em>SIGINT</em> is caught and
+            handled, and if job control is active, <em>SIGTTIN</em>,
+            <em>SIGTTOU</em> and <em>SIGTSTP</em> are also ignored. Commands
+            that are run as the result of a command substitution also ignore
+            these signals, when keyboard generated.
+          </p>
+          <p>
+            <em>SIGHUP</em> by default exits a shell. An interactive shell will
+            send a <em>SIGHUP</em> to all jobs, running or stopped; see the
+            documentation on the <strong class="command">disown</strong> built-in if you
+            want to disable this default behavior for a particular process. Use
+            the <tt CLASS="option">huponexit</tt> option for killing all jobs
+            upon receiving a <em>SIGHUP</em> signal, using the
+            <strong class="command">shopt</strong> built-in.
+          </p>
+        </div>
+        <div class="sect3">
+          <h3 class="sect3">
+            <a name="sect_12_01_01_03"></a>12.1.1.3. Sending signals using the
+            shell
+          </h3>
+          <p>The following signals can be sent using the Bash shell:</p>
+          <div class="table">
+            <a name="tab_12_01"></a>
+            <p><strong>Table 12-1. Control signals in Bash</strong></p>
+            <table border="1" class="CALSTABLE">
+              <thead>
+                <tr>
+                  <th align="LEFT" valign="MIDDLE">Standard key combination</th>
+                  <th align="LEFT" valign="MIDDLE">Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="LEFT" valign="MIDDLE">
+                    <strong class="keycap">Ctrl</strong>+<strong class="keycap">C</strong>
+                  </td>
+                  <td align="LEFT" valign="MIDDLE">
+                    The interrupt signal, sends SIGINT to the job running in the
+                    foreground.
+                  </td>
+                </tr>
+                <tr>
+                  <td align="LEFT" valign="MIDDLE">
+                    <strong class="keycap">Ctrl</strong>+<strong class="keycap">Y</strong>
+                  </td>
+                  <td align="LEFT" valign="MIDDLE">
+                    The <em>delayed suspend</em> character. Causes a running
+                    process to be stopped when it attempts to read input from
+                    the terminal. Control is returned to the shell, the user can
+                    foreground, background or kill the process. Delayed suspend
+                    is only available on operating systems supporting this
+                    feature.
+                  </td>
+                </tr>
+                <tr>
+                  <td align="LEFT" valign="MIDDLE">
+                    <strong class="keycap">Ctrl</strong>+<strong class="keycap">Z</strong>
+                  </td>
+                  <td align="LEFT" valign="MIDDLE">
+                    The <em>suspend</em> signal, sends a <em>SIGTSTP</em> to a
+                    running program, thus stopping it and returning control to
+                    the shell.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note">
+            <p></p>
+            <table class="note" width="100%" border="0">
+              <tr>
+                <td width="25" align="CENTER" valign="TOP">
+                  <img src="./images/note.gif" hspace="5" alt="Note" />
+                </td>
+                <th align="LEFT" valign="CENTER"><strong>Terminal settings</strong></th>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td align="LEFT" valign="TOP">
+                  <p>
+                    Check your <strong class="command">stty</strong> settings. Suspend and
+                    resume of output is usually disabled if you are using
+                    <span CLASS="QUOTE">"modern"</span> terminal emulations. The
+                    standard <strong class="command">xterm</strong> supports
+                    <strong class="keycap">Ctrl</strong>+<strong class="keycap">S</strong> and
+                    <strong class="keycap">Ctrl</strong>+<strong class="keycap">Q</strong> by
+                    default.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="sect2">
+        <h2 class="sect2">
+          <a name="sect_12_01_02"></a>12.1.2. Usage of signals with kill
+        </h2>
+        <p>
+          Most modern shells, Bash included, have a built-in
+          <strong class="command">kill</strong> function. In Bash, both signal names and
+          numbers are accepted as options, and arguments may be job or process
+          IDs. An exit status can be reported using the
+          <tt CLASS="option">-l</tt> option: zero when at least one signal was
+          successfully sent, non-zero if an error occurred.
+        </p>
+        <p>
+          Using the <strong class="command">kill</strong> command from
+          <tt CLASS="filename">/usr/bin</tt>, your system might enable extra
+          options, such as the ability to kill processes from other than your
+          own user ID and specifying processes by name, like with
+          <strong class="command">pgrep</strong> and <strong class="command">pkill</strong>.
+        </p>
+        <p>
+          Both <strong class="command">kill</strong> commands send the
+          <em>TERM</em> signal if none is given.
+        </p>
+        <p>This is a list of the most common signals:</p>
+        <div class="table">
+          <a name="tab_12_02"></a>
+          <p><strong>Table 12-2. Common kill signals</strong></p>
+          <table border="1" class="CALSTABLE">
+            <thead>
+              <tr>
+                <th align="LEFT" valign="MIDDLE">Signal name</th>
+                <th align="LEFT" valign="MIDDLE">Signal value</th>
+                <th align="LEFT" valign="MIDDLE">Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="LEFT" valign="MIDDLE">SIGHUP</td>
+                <td align="LEFT" valign="MIDDLE">1</td>
+                <td align="LEFT" valign="MIDDLE">Hangup</td>
+              </tr>
+              <tr>
+                <td align="LEFT" valign="MIDDLE">SIGINT</td>
+                <td align="LEFT" valign="MIDDLE">2</td>
+                <td align="LEFT" valign="MIDDLE">Interrupt from keyboard</td>
+              </tr>
+              <tr>
+                <td align="LEFT" valign="MIDDLE">SIGKILL</td>
+                <td align="LEFT" valign="MIDDLE">9</td>
+                <td align="LEFT" valign="MIDDLE">Kill signal</td>
+              </tr>
+              <tr>
+                <td align="LEFT" valign="MIDDLE">SIGTERM</td>
+                <td align="LEFT" valign="MIDDLE">15</td>
+                <td align="LEFT" valign="MIDDLE">Termination signal</td>
+              </tr>
+              <tr>
+                <td align="LEFT" valign="MIDDLE">SIGSTOP</td>
+                <td align="LEFT" valign="MIDDLE">17,19,23</td>
+                <td align="LEFT" valign="MIDDLE">Stop the process</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">
+          <p></p>
+          <table class="note" width="100%" border="0">
+            <tr>
+              <td width="25" align="CENTER" valign="TOP">
+                <img src="./images/note.gif" hspace="5" alt="Note" />
+              </td>
+              <th align="LEFT" valign="CENTER"><strong>SIGKILL and SIGSTOP</strong></th>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td align="LEFT" valign="TOP">
+                <p>
+                  <em>SIGKILL</em> and <em>SIGSTOP</em> can not be caught,
+                  blocked or ignored.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          When killing a process or series of processes, it is common sense to
+          start trying with the least dangerous signal, <em>SIGTERM</em>. That
+          way, programs that care about an orderly shutdown get the chance to
+          follow the procedures that they have been designed to execute when
+          getting the <em>SIGTERM</em> signal, such as cleaning up and closing
+          open files. If you send a <em>SIGKILL</em> to a process, you remove
+          any chance for the process to do a tidy cleanup and shutdown, which
+          might have unfortunate consequences.
+        </p>
+        <p>
+          But if a clean termination does not work, the <em>INT</em> or<em
+            >KILL</em
+          >
+          signals might be the only way. For instance, when a process does not
+          die using <strong class="keycap">Ctrl</strong>+<strong class="keycap">C</strong>, it is
+          best to use the
+          <strong class="command">kill <tt CLASS="option">-9</tt></strong> on that process
+          ID:
+        </p>
+        <table border="0" bgcolor="#E0E0E0" width="100%">
+          <tr>
+            <td>
+              <div class="code-box">
+                <pre class="screen">&#13;<TT CLASS="prompt">maud: ~&#62;</TT
+>
+ <B
+CLASS="command"
+>ps <TT
+CLASS="option"
+>-ef</TT
+> | grep <TT
+CLASS="parameter"
+><I
+>stuck_process</I
+></TT
+></B
+>
+maud    5607   2214  0 20:05 pts/5    00:00:02 stuck_process
+
+<TT
+CLASS="prompt"
+>maud: ~&#62;</TT
+> <B
+CLASS="command"
+>kill <TT
+CLASS="option"
+>-9</TT
+> <TT
+CLASS="parameter"
+><I
+>5607</I
+></TT
+></B
+>
+
+<TT
+CLASS="prompt"
+>maud: ~&#62;</TT
+> <B
+CLASS="command"
+>ps <TT
+CLASS="option"
+>-ef</TT
+> | grep <TT
+CLASS="parameter"
+><I
+>stuck_process</I
+></TT
+></B
+>
+maud    5614    2214 0 20:15 pts/5    00:00:00 grep stuck_process
+[1]+ Killed		stuck_process
+</PRE>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <p>
+          When a process starts up several instances,
+          <strong class="command">killall</strong> might be easier. It takes the same
+          option as the <strong class="command">kill</strong> command, but applies on all
+          instances of a given process. Test this command before using it in a
+          production environment, since it might not work as expected on some of
+          the commercial Unices.
+        </p>
+      </div>
+    </div>
+    <div class="NAVFOOTER">
+      <hr align="LEFT" width="100%" />
+      <table
+        summary="Footer navigation table"
+        width="100%"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tr>
+          <td width="33%" align="left" valign="top">
+            <a href="chap_12.html" accesskey="P">Prev</a>
+          </td>
+          <td width="34%" align="center" valign="top">
+            <a href="index.html" accesskey="H">Home</a>
+          </td>
+          <td width="33%" align="right" valign="top">
+            <a href="sect_12_02.html" accesskey="N">Next</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="33%" align="left" valign="top">Catching signals</td>
+          <td width="34%" align="center" valign="top">
+            <a href="chap_12.html" accesskey="U">Up</a>
+          </td>
+          <td width="33%" align="right" valign="top">Traps</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
