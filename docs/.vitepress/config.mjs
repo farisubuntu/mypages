@@ -26,6 +26,8 @@ export default defineConfig({
     ],
   },
   base: "/mypages/",
-  srcDir: "./src"
+  
+
+  
   
 });
