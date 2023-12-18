@@ -1,33 +1,35 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
+// refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
-  title: "My Pages",
-  description: "Notes and docs about computer",
+  lang: "en-US",
+  title: "VitePress",
+  description: "Vite & Vue powered static site generator.",
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "Example", link: "/example" },
+
+      // {
+      //   text: 'Dropdown Menu',
+      //   items: [
+      //     { text: 'Item A', link: '/item-1' },
+      //     { text: 'Item B', link: '/item-2' },
+      //     { text: 'Item C', link: '/item-3' },
+      //   ],
+      // },
+
+      // ...
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        // text: 'Guide',
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Example", link: "/example" },
+          // ...
         ],
       },
     ],
-
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
   },
-  base: "/mypages/",
-  
-
-  
-  
 });
