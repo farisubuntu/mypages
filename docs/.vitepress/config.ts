@@ -19,7 +19,7 @@ export default defineConfig({
       //   ],
       // },
 
-      // ...
+      //...
     ],
 
     sidebar: [
@@ -32,4 +32,7 @@ export default defineConfig({
       },
     ],
   },
+base: '/mypages/',
+srcDir: './src'
+
 });
