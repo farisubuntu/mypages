@@ -1,4 +1,6 @@
+# Learn PHP
 
+```php
 <?php // PHP code must be enclosed with <?php tags
 
 // If your php file only contains PHP code, it is best practice
@@ -864,5 +866,5 @@ try {
 } catch (MyException $e) {
     // Handle my exception
 }
-
+```
 

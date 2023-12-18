@@ -1,2 +1,4 @@
 node_modules/
 package.*.json
+docs/.vitepress/dist
+docs/.vitepress/cache

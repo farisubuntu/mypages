@@ -1,6 +1,4 @@
-## Bash Quick Ref
-
-[learnxinyminutes.com](https://learnxinyminutes.com/docs/bash/)
+# Learn Bash
 
 ```bash
 #!/usr/bin/env bash
@@ -129,7 +127,7 @@ echo {$from..$to} # => {$from..$to}
 # Observe that the following are equivalent:
 echo "I'm in $(pwd)" # shell execution, exec `pwd` and interpolates output
 echo "I'm in $PWD" # interpolates the variable
-echo "I'm in `pwd`" # shell execution
+echo "I'm in `pwd`" # same as shell execution
 
 # If you get too much output in your terminal, or from a script, the command
 # `clear` clears your screen:
@@ -327,7 +325,7 @@ echo "#helloworld" | tee output.out >/dev/null
 rm -v output.out error.err output-and-error.log
 rm -r tempDir/ # recursively delete
 # You can install the `trash-cli` Python package to have `trash`
-# which puts files in the system trash and doesn't delete them directly
+# which puts files in the system trash and doesn't delete them directly
 # see https://pypi.org/project/trash-cli/ if you want to be careful
 
 # Commands can be substituted within other commands using $( ):
@@ -344,7 +342,7 @@ case "$Variable" in
     # List patterns for the conditions you want to meet
     0) echo "There is a zero.";;
     1) echo "There is a one.";;
-    *) echo "It is not null.";;  # match everything
+    *) echo "It is not null.";;  # match everything
 esac
 
 # `for` loops iterate for as many arguments given:
@@ -446,8 +444,8 @@ cut -d ',' -f 1 file.txt
 # replaces every occurrence of 'okay' with 'great' in file.txt
 # (regex compatible)
 sed -i 's/okay/great/g' file.txt
-# be aware that this -i flag means that file.txt will be changed
-# -i or --in-place erase the input file (use --in-place=.backup to keep a back-up)
+# be aware that this -i flag means that file.txt will be changed
+# -i or --in-place erase the input file (use --in-place=.backup to keep a back-up)
 
 # print to stdout all lines of file.txt which match some regex
 # The example prints lines which begin with "foo" and end in "bar"
