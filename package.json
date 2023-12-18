@@ -1,10 +1,12 @@
 {
+  "private": true,
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:serve": "vitepress serve docs"
   },
-  "dependencies": {
-    "vitepress": "^1.0.0-rc.32"
+  "devDependencies": {
+    "vitepress": "latest"
   }
 }
