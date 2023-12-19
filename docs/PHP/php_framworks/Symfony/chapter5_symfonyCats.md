@@ -1,4 +1,5 @@
 # SymfonyCasts
+
 [[toc]]
 
 [from - https://symfonycasts.com/screencast/symfony/flex#play](https://symfonycasts.com/screencast/symfony/flex#play)
@@ -6,7 +7,7 @@
 ## Symfony Flex: Aliases, Packs & Recipes
 
 - **symfony/flex** is `composer` plugin that add more features to composer.
-- head to https://flex.symfony.com to see a gian page full of packages
+- head to [https://flex.symfony.com](https://flex.symfony.com) to see a gian page full of packages
 - Whenever you install a package, that package may have a recipe. If it does, in addition to downloading the package into the vendor/ directory, Flex will also execute its recipe. Recipes can do things like add new files or even modify a few existing files.
 - bundles are Symfony plugins, which add more features to our app.
 - use `extends` and surround all content with `{% block body %}`.
@@ -28,7 +29,10 @@
 
 ### Assets, CSS, Images, etc
 
-- Symfony have a cool features to help work with CSS and Javascript **Webpack Encore and Stimulus** => `$ composer require symfony/asset`.
+- Symfony have a cool features to help work with CSS and Javascript **Webpack Encore and Stimulus** 
+  
+`$ composer require symfony/asset`.
+
 - put css styles files inside '/public' folder anywhere.
 - you can use `{{asset('styles/app.css')}} (_note no need to use '/'_)
 
@@ -36,34 +40,40 @@
 
 - To generate a URL inside of twig, use `{{ path('route name')}}`, where route name is the name you associate it using `#[Route('/',name='route_name')]`
 - all following are the same:
+
 `php bin/console`
 `./bin/console`
 `symfony console`
-- for ` #[Route('/browse/{slug}', name: 'app_browse')]`, this is an example:
-```html
-  <li class="d-inline">
-            <a class="btn btn-primary btn-sm" href="{{ path('app_browse', {
-                slug: 'pop'
-            }) }}">Pop</a>
-        </li>
-        <li class="d-inline">
-            <a class="btn btn-primary btn-sm" href="{{ path('app_browse', {
-                slug: 'rock'
-            }) }}">Rock</a>
-        </li>
-        <li class="d-inline">
-            <a class="btn btn-primary btn-sm" href="{{ path('app_browse', {
-                slug: 'heavy-metal'
-            }) }}">Heavy Metal</a>
-        </li>
 
+
+- for ` #[Route('/browse/{slug}', name: 'app_browse')]`, this is an example:
+
+```html
+<li class="d-inline">
+    <a class="btn btn-primary btn-sm" href="{{ path('app_browse', {
+        slug: 'pop'
+    }) }}">Pop</a>
+</li>
+<li class="d-inline">
+    <a class="btn btn-primary btn-sm" href="{{ path('app_browse', {
+        slug: 'rock'
+    }) }}">Rock</a>
+</li>
+<li class="d-inline">
+    <a class="btn btn-primary btn-sm" href="{{ path('app_browse', {
+        slug: 'heavy-metal'
+    }) }}">Heavy Metal</a>
+</li>
 ```
+
 ### JSON API Endpoint
+
 - `return new JsonRespose($songs);`
 
 ### Smart Routes: GET-only & Validate {Wildcards}
 
 - Restricting Routes to GET or POST Only,use `methods: ['GET']`. Such as:
+
 ` #[Route('/api/songs/{id}', methods: ['GET'])]`
 
 ### Restricting Route Wildcards by Regex
@@ -82,12 +92,16 @@
 
 - Webpack is the industry standard tool for packaging, minifying and parsing your frontend CSS, JavaScript, and other files.
 - first check you have node and npm/yarn installed:
+
 `node -v`
 `yarn --version`
+
 or
+
 `npm -v`
 
 Then, install **Encore**:
+
 `composer require encore:1.14.0` =>this will make 'asset' folder
 
 > If you're using version 2 or higher of symfony/webpack-encore-bundle, be sure to also run: `composer require symfony/stimulus-bundle`
@@ -101,9 +115,10 @@ Then `npm install` to install debendencies
 - Container: an array of services ids associated with name.
     - There are actually many more services in the container, and each service has a unique id in the container.
     - `php bin/console debug:container`
-    - For a full list, you can run (https://symfony.com/doc/current/service_container.html).
+    - For a full list, you can run [https://symfony.com/doc/current/service_container.html](https://symfony.com/doc/current/service_container.html).
 
-> Creating/Configuring Services in the Container: see (https://symfony.com/doc/current/service_container.html#:~:text=Creating/Configuring%20Services%20in%20the%20Container)
+> Creating/Configuring Services in the Container: see [https://symfony.com/doc/current/service_container.html#:~:text=Creating/Configuring%20Services%20in%20the%20Container](https://symfony.com/doc/current/service_container.html#:~:text=Creating/Configuring%20Services%20in%20the%20Container)
+
     keywords:
     - autowiring
     - src/services
@@ -112,6 +127,5 @@ Then `npm install` to install debendencies
     - array_rand($messeges)
     - get a list of autowireable type-hints by running: `$ php bin/console debug:autowiring`
 
--
 
 
