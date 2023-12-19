@@ -100,6 +100,6 @@ module.exports = {
     },
   },
   ignoreDeadLinks: true,
-  base: '/gh-pages/',
+  base: '/mypages/',
 };
 
