@@ -94,8 +94,9 @@ module.exports = {
       theme: "material-palenight",
       lineNumbers: true,
     },
+    
   },
   ignoreDeadLinks: true,
-
+  
 };
 
