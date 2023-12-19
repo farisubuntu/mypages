@@ -1,3 +1,5 @@
+[[toc]]
+
 # CSS Media Query Review
 
 - Syntax:
@@ -7,14 +9,17 @@
   // CSS rules
 }
 ```
+
 > **Important: Always put your media queries at the end of your CSS file.**
 
-+ media types (devices):
+## media types (devices):
+
    - all — for all media types
    - print — for printers
    - screen — for computer screens, tablets and, smart-phones
    - speech — for screen readers that “read” the page out loud
 - notes inside code:
+
 ```css
 
 @media () {      /*target all media types*/
@@ -22,6 +27,7 @@
 }
 
 ```
+
 + No standard resolution for devices but there are some commonly used breakpoints for widths of devices:
     - **320px — 480px: Mobile devices**
     - 481px — 768px: iPads, Tablets

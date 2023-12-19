@@ -1,3 +1,7 @@
+# Anonsurf VPN
+
+[[toc]]
+
 ### Step 1. Clone
 
 ```bash

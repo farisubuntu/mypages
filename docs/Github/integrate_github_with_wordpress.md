@@ -1,30 +1,12 @@
+# WordPress and GitHub Integration – Live and Local Environment
+---
 
-source: https://www.cloudways.com/blog/wordpress-github/
+[[toc]]
 
-
-## WordPress and GitHub Integration – Live and Local Environment
+[source: https://www.cloudways.com/blog/wordpress-github/](https://www.cloudways.com/blog/wordpress-github/)
 
 This article outlines the use of Git in WordPress development and how developers can set up a Git-enabled WordPress development workflow.
 
-Table of Contents
-
-*   [How to Use WordPress and GitHub](#how-to-use-wordpress-and-github)
-*   [How to Use WordPress and GitHub – Live Environment](#how-to-use-wordpress-and-github-live-environment)
-    *   [Step 1: Create Repository on GitHub](#create-repository-on-github)
-    *   [Step 2: Push Live WordPress site files to the GitHub Repository](#push-live-wordpress-site-files-to--the-github-repository)
-    *   [Step 3: Install Git](#install-git)
-    *   [Step 4: Pull to Local Folder from GitHub Repository](#pull-to-local-folder-from-github-repository)
-    *   [Step 5: Build Development Environment on the local Machine](#build-development-environment-on-the-local-machine)
-    *   [Step 6: Connect Sublime to GitHub](#connect-sublime-to-github)
-    *   [Step 7: Push from Local to GitHub](#push-from-local-to-github)
-    *   [Step 8: Connect GitHub with Live Environment](#connect-github-with-live-environment)
-    *   [Step 9: Pull Changes to a Live Environment from GitHub](#pull-changes-to-a-live-environment-from-github)
-*   [Why Isn’t The Pull Automated?](#why-isn't-the-pull-automated?)
-*   [How to Use WordPress and GitHub – Local Environment](#how-to-use-wordpress-and-github-local-environment)
-    *   [Step1: Download and Install Git](#download-and-install-git)
-    *   [Step 2: Sign in to GitHub and Create a New Repository](#sign-in-to-github-and-create-a-new-repository)
-    *   [Step 3: Push WordPress files from the local environment to GitHub](#push-wordpress-files-from-the-local-environment-to-github)
-    *   [Step 4: Check GitHub repository](#check-github-repository)
 
 How to Use WordPress and GitHub
 -------------------------------

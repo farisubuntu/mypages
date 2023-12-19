@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
+		<script type="text/javascript" src="http://192.168.100.2/common.js"></script>
+		<script type="text/javascript" src="http://192.168.100.2/lang_pack/english.js"></script>
+		<script type="text/javascript" src="http://192.168.100.2/lang_pack/language.js"></script>
+		<link type="text/css" rel="stylesheet" href="help.css">
+		<title>Help (build 40559) - Radius</title>
+	</head>
+<body><div id="header"><div class="logo"> </div><div class="navig"><a href="index.asp">Index</a> | <a href="javascript:self.close();"><script type="text/javascript">Capture(sbutton.clos)</script></a></div></div><div id="content"><h2><script type="text/javascript">Capture(radius.h2)</script></h2><dl><script type="text/javascript">Capture(hradauth.page1)</script><dt><script type="text/javascript">Capture(radius.label2)</script></dt><script type="text/javascript">Capture(hradauth.page2)</script><dt><script type="text/javascript">Capture(radius.label3)</script> - <script type="text/javascript">Capture(radius.label4)</script></dt><script type="text/javascript">Capture(hradauth.page3)</script><dt><script type="text/javascript">Capture(radius.label5)</script></dt><script type="text/javascript">Capture(hradauth.page4)</script><dt><script type="text/javascript">Capture(radius.label6)</script></dt><script type="text/javascript">Capture(hradauth.page5)</script><dt><script type="text/javascript">Capture(radius.label7)</script></dt><script type="text/javascript">Capture(hradauth.page6)</script><dt><script type="text/javascript">Capture(radius.label8)</script></dt><script type="text/javascript">Capture(hradauth.page7)</script></dl></div><div class="also"><h4><script type="text/javascript">Capture(share.seealso)</script></h4><ul><li><a href="HWireless.asp"><script type="text/javascript">Capture(bmenu.wirelessBasic)</script></a></li><li><a href="HWPA.asp"><script type="text/javascript">Capture(bmenu.wirelessSecurity)</script></a></li><li><a href="HWirelessAdvanced.asp"><script type="text/javascript">Capture(bmenu.wirelessAdvanced)</script></a></li></ul></div></body></html>

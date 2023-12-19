@@ -1,93 +1,91 @@
-https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true
+[[toc]]
+
+# JSON Guide
+
+[source](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true)
 
 > The Complete JSON Tutorial – Quickly Learn JSON
 
-
-
 # The Complete JSON Tutorial – Quickly Learn JSON
+
 JavaScript Object Notation or more commonly known as it’s abbreviated name JSON is extensively used throughout all kinds of applications. Its purpose is to streamline communications, most commonly between a browser and a server. Although having said this, it’s perfectly normal for this to work the opposite way around too.
 
 You will inevitably fall upon JSON one time or another during your developer journey and this article hopes to give you a content-know-how to work with it.
 
-### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#contents)Contents
+### [Contents](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#contents)
 
-*   Some Background
-*   A Basic Introduction
-*   JSON Data Types
-*   JSON Formatting
-*   Basic Example
-*   Nested JSON
-*   Advanced Example
-*   Managing JSON With JavaScript
-*   Working With The Console
-*   Summary
+- Some Background
+- A Basic Introduction
+- JSON Data Types
+- JSON Formatting
+- Basic Example
+- Nested JSON
+- Advanced Example
+- Managing JSON With JavaScript
+- Working With The Console
+- Summary
 
-### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#some-background)Some Background
+### [Some Background](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#some-background)
 
 JSON is a major part of the JavaScript programming language, it uses go far and beyond the imaginable eye. Discovered in March 2001 and Catering for over 40 languages, yes 40! JSON, with the right library, can be used in almost every programming language you’ve heard of.
 
 This technology even has its own [website](https://www.json.org/), which lists all the libraries that can bootstrap your application with JSON. In addition, there are some technical diagrams to provide an insight into how this great communication helper works.
 
-### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#a-basic-introduction)A Basic Introduction
+### [A Basic Introduction](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#a-basic-introduction)
 
-JSON is quite easy to use when you get your head around it, it’s nothing more than simple text structured in a certain way. If you’ve never seen it in the flesh before, then this is a good time to show a small example. Here is what it can look like –  
+JSON is quite easy to use when you get your head around it, it’s nothing more than simple text structured in a certain way. If you’ve never seen it in the flesh before, then this is a good time to show a small example. Here is what it can look like –
 
-    
-        {
-            "SiteName": "CodeWall",
-            "ArticleName": "JSON Tutorials",
-            "Revision": 1
-        }
-    
+```json
+{
+  "SiteName": "CodeWall",
+  "ArticleName": "JSON Tutorials",
+  "Revision": 1
+}
+```
 
 As you can see from the example, it’s just as stated, simple text, formatted with quotations, separated by colons and comma’s and completely wrapped in some braces. It can get more advanced with bigger data, but we will go through that in detail within this article too.
 
-### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#json-data-types)JSON Data Types
+### [JSON Data Types](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#json-data-types)
 
 JavaScript Object Notation can handle nearly every data type you could possibly need it too. This, of course, makes it an extremely powerful tool, being able to handle arrays and objects in itself is super-cool. Let’s go through the data types with some small examples showing how they would look in a working application.
 
-**String**  
+**String**
 
-    
-        {
-            "StringDataType": "String"
-        }
-    
+```json
+{
+  "StringDataType": "String"
+}
+```
 
-**Object**  
+**Object**
 
-    
-        {
-            "ObjectDataType": {
-                "myObj": "ObjectData"
-            }
-        }
-    
+{
+"ObjectDataType": {
+"myObj": "ObjectData"
+}
+}
 
-**Array**  
+**Array**
 
-        {
-            "ArrayDataType": [1, 2, 3, 4]
-        }
-    
+{
+"ArrayDataType": [1, 2, 3, 4]
+}
 
-**Number**  
+**Number**
 
-**Boolean**  
+**Boolean**
 
-        {
-            "BooleanTrueDataType": true,
-            "BooleanFalseDataType": false
-        }
-    
+{
+"BooleanTrueDataType": true,
+"BooleanFalseDataType": false
+}
 
-**Date**  
+**Date**
 
-        {
-            "DateStringDataType": "2011-07-14 19:43:37 +0100",
-            "JavaScriptDateDataType": new Date(1310669017000)
-        }
-    
+{
+"DateStringDataType": "2011-07-14 19:43:37 +0100",
+"JavaScriptDateDataType": new Date(1310669017000)
+}
 
 ### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#json-formatting)JSON Formatting
 
@@ -139,19 +137,18 @@ No doubt you will end up working with multiple object JSON in your lifetime, the
 
 Now that we’ve gone through the main rules of JSON, it’s time for an example with a range of data types. Feel free to use the following code for your own learning, it will be a great reference or starting point. In this example, these four data-types are present –
 
-*   String
-*   Integer
-*   Decimal
-*   Boolean
+- String
+- Integer
+- Decimal
+- Boolean
 
-        {
-            "Article": "Tutorial",
-            "Author": "Dan Englishby",
-            "YearPublished": 2018,
-            "IsPublished": true,
-            "AverageWordsPerSentce": 20.3
-        }
-    
+{
+"Article": "Tutorial",
+"Author": "Dan Englishby",
+"YearPublished": 2018,
+"IsPublished": true,
+"AverageWordsPerSentce": 20.3
+}
 
 ### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#nesting)Nesting
 
@@ -159,7 +156,7 @@ Ok, so JSON can become pretty complicated in terms of data-load and that’s why
 
 **How do we nest objects?**
 
-Nesting objects are achieved by creating an Array-of-objects within a JSON property. See the following example  
+Nesting objects are achieved by creating an Array-of-objects within a JSON property. See the following example
 
         {
             "OuterObject": [{
@@ -175,11 +172,10 @@ Nesting objects are achieved by creating an Array-of-objects within a JSON prope
                 ]
             }]
         }
-    
 
 **How do we nest arrays?**
 
-Similarly, we can nest arrays, and it’s pretty simple too. The only problem with doing it, is you lose the ability to specify the array’s data with identifier or keys. This is because the nested array will be identified with a numeric index rather than a key-value pair.  
+Similarly, we can nest arrays, and it’s pretty simple too. The only problem with doing it, is you lose the ability to specify the array’s data with identifier or keys. This is because the nested array will be identified with a numeric index rather than a key-value pair.
 
         {
             "OuterObject": [{
@@ -196,13 +192,12 @@ Similarly, we can nest arrays, and it’s pretty simple too. The only problem wi
                 ]
             }]
         }
-    
 
 ### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#advanced-examples)Advanced Examples
 
 See the following examples that use nested concepts to section out data. The property **Articles** holds a nested set of article names, in addition, it holds the next nested set of data, **Shared On**, which again nests social network names.
 
-**Advanced Example #1**  
+**Advanced Example #1**
 
         {
             "Category": "Tutorials",
@@ -231,7 +226,7 @@ See the following examples that use nested concepts to section out data. The pro
                             "SocialNetwork": "Google+"
                         }
                     ]
-    
+
                 },
                 {
                     "Name": "ChartJS Lesson 3",
@@ -261,11 +256,10 @@ See the following examples that use nested concepts to section out data. The pro
                 }
             ]
         }
-    
 
 The above example shows how to nest objects, but you can also nest arrays too, having an array-of-arrays is perfectly normal. It all depends on what your specific needs are. The following example shows the **Shared On** property holding an array of social network names.
 
-**Advanced Example 2**  
+**Advanced Example 2**
 
         {
             "Category": "Tutorials",
@@ -279,7 +273,6 @@ The above example shows how to nest objects, but you can also nest arrays too, h
                 }
             ]
         }
-    
 
 ### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#managing-json-with-javascript)Managing JSON With JavaScript
 
@@ -289,7 +282,7 @@ JavaScript works super-fluently with JSON, which of course it does, JS did creat
 
 If you’ve already worked with JavaScript before, I know this will be teaching you to suck eggs, but for the readers who haven’t see the example below –
 
-**Storing as a variable**  
+**Storing as a variable**
 
         var json = {
             "Article": "Tutorial",
@@ -298,7 +291,6 @@ If you’ve already worked with JavaScript before, I know this will be teaching 
             "IsPublished": true,
             "AverageWordsPerSentce": 20.3
         };
-    
 
 Yep, it’s as simple as that, you’ve just stored your first JSON data-set in a JS variable!
 
@@ -306,20 +298,18 @@ Yep, it’s as simple as that, you’ve just stored your first JSON data-set in 
 
 Accessing JSON values can be done in two ways
 
-*   Dot Notation Style
-*   Bracket Notation Style
+- Dot Notation Style
+- Bracket Notation Style
 
 **Dot Notation Example**
 
-With the variable we created in the last example, we can now access the values with the following code.  
+With the variable we created in the last example, we can now access the values with the following code.
 
         var articleName = json.Article; // variable is now "Tutorial"
-    
 
-**Bracket Notation Example**  
+**Bracket Notation Example**
 
         var articleName = json["Article"]; // variable is now "Tutorial"
-    
 
 ### [](https://dev.to/danenglishby/the-complete-json-tutorial-quickly-learn-json-14b9?signin=true#working-with-the-console)Working With The Console
 
@@ -342,7 +332,7 @@ See chromes console in the image below –
 
 **Logging to the console**
 
-Now we’ve discovered the console, let’s use it, add the following code to your JavaScript and reload the page.  
+Now we’ve discovered the console, let’s use it, add the following code to your JavaScript and reload the page.
 
         var json = {
             "Article": "Tutorial",
@@ -352,7 +342,6 @@ Now we’ve discovered the console, let’s use it, add the following code to yo
             "AverageWordsPerSentce": 20.3
         };
         console.log(json);
-    
 
 [![console log example](https://res.cloudinary.com/practicaldev/image/fetch/s--iJ03ckCQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/console-log-example.jpg)](https://res.cloudinary.com/practicaldev/image/fetch/s--iJ03ckCQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.codewall.co.uk/wp-content/uploads/2018/08/console-log-example.jpg)
 

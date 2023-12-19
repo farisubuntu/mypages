@@ -1,41 +1,10 @@
-<style>
-.h1{
-  color:blue;
-}
-.h2{
-  color:green;
-}
-.red{
-  color:red;
-}
-.blue{
-    color:blue;
-}
-.bold{
-  font-size:large;
-}
-.bolder{
-  font-size:larger;
-}
-.x-large{
-    font-size:xx-large;
-}
-.note{
- background-color:bisque;
- border-left:5px solid gray;
- padding:0.5em;
-}
-code,.code{
-  border:1px dashed bisque;
-  padding:2px;
-}
-</style>
+[[toc]]
 
 # Flex Box Layout:
 
-- source: https://drafts.csswg.org/css-flexbox/#overview
+- source: [CSS WG - drafts](https://drafts.csswg.org/css-flexbox/#overview)
 
-- additional: https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/
+- additional: [freecodecamp](https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/)
 
 ---
 
@@ -126,6 +95,7 @@ code,.code{
     - To prevent the image growing too large, add a max-width to the image and because the __media object is using the initial values of flexbox it can shrink but not grow,and uses `flex-basis` of `auto`, any `width` or `max-width` applied to the image will become the `flex-basis`__.
 - **Form Controls:**
     - A common pattern is to have an `<input>` element paired with a `<button>` such as _search box_. You need to allow the `<input>` field to grow, while the button does not grow.then add a label or icon to the left so button pushed  to the right.[https://codepen.io/farisubuntu/pen/abRMvgM]
+   
     ```html
     <form class="example">
      <div class="wrapper"> <!--added wrapper-->
@@ -147,10 +117,9 @@ The properties which distribute space are:
 
 The properties used for alignment in flexbox: The space available for this alignment will depend on the **height of the flex container**, or flex line in the case of a wrapped set of items.
 
-<div class="note red"><code>justify-content</code> values work the same if your container <code>flex-direction: column;</code>but you may not have extra space to distribute in a column unless you add a height or block-size to the flex container, See the Pen 
+`justify-content` values work the same if your container `flex-direction: column;` but you may not have extra space to distribute in a column unless you add a `height` or `block-size` to the flex container, See the Pen 
 
-<!-- don't remove this line -->
-(https://codepen.io/rachelandrew/pen/zLyMyV)</div>
+[https://codepen.io/rachelandrew/pen/zLyMyV](https://codepen.io/rachelandrew/pen/zLyMyV)
 
 
 - `align-self`: <mark>stretch</mark> aligns a single item on the cross axis. Flex items in a row stretch to the height of the tallest item by default.
@@ -175,7 +144,7 @@ The properties used for alignment in flexbox: The space available for this align
 ```
 
 > For problems examples solved using flex layout, see: 
-[https://github.com/philipwalton/solved-by-flexbox]
+[https://github.com/philipwalton/solved-by-flexbox](https://github.com/philipwalton/solved-by-flexbox)
 
 #### tricks when use flex layout:
 
@@ -191,35 +160,35 @@ Listed below are some of my criteria for an ideal flexbox grid system. Fortunate
 > TIP: when you use a *flex layout* to plan a page; first, for each area or section on your page decide if it will take the role as a `container/item` or both roles then contained it withing a wrapper element and set it as a `display:flex`
 
 
-<div class="note blue"><div class="bolder">Wireframes</div> are used to outline webpage styles, content, and functionality. UX designers will often use wireframes to explain their ideas to web developers.</div>
+**Wireframes** are used to outline webpage styles, content, and functionality. UX designers will often use wireframes to explain their ideas to web developers.
 
 ---
 
-
-## Using space-between {#identifier .h2}
+## Using space-between
 
 - `justify-content`: the space between items is not a **gap** or **margin**
 
-<img src="https://defensivecss.dev/img/defensive-10-1.png">
+<img src="https://defensivecss.dev/img/defensive-10-1.png" alt="not found" />
 
 - When the number of items is less than four, here is what will happen:
 
-<img src="https://defensivecss.dev/img/defensive-10-2.png">
+<img src="https://defensivecss.dev/img/defensive-10-2.png" alt="not found" />
 
-##### There are different solutions to this:
+#### There are different solutions to this:
 
 - Margin
 - Flexbox gap (Use with caution)
 - Padding (Can be applied to the parent of each child element):
-    ```css
-    .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    }
-    ```
-    
-    > example: https://codesandbox.io/s/flamboyant-farrell-q1p0nn?file=/index.html
+
+```css
+.wrapper {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+```
+
+> example: https://codesandbox.io/s/flamboyant-farrell-q1p0nn?file=/index.html
 
 - Adding empty elements to act as a spacer
 
@@ -227,13 +196,14 @@ Listed below are some of my criteria for an ideal flexbox grid system. Fortunate
 
 ## Text over image:
 
-<img src="https://defensivecss.dev/img/defensive-11-1.png" width="60%" />
+<img src="https://defensivecss.dev/img/defensive-11-1.png" width="60%" alt="not found" />
 
 - The problem: When image fails to load, it will not readable:
 To Fix that: add a background color to the image such as `img{background-color:grey;}`
 
 ## Vertical media query
-see: https://defensivecss.dev/tip/vertical-mq/
+
+see: [https://defensivecss.dev/tip/vertical-mq/](https://defensivecss.dev/tip/vertical-mq/)
 
 
 ---

@@ -1,18 +1,7 @@
-<style>
-rect{
-border:1px solid blue;
+# apt - packge manager (debian)
+[[toc]]
 
-color:brown;
-}
-code{
- border:1px dashed brown;
- color:green;
- }
-.cledit-section{
-color:green;
-}
-</style>
-https://itsfoss.com/apt-command-guide/
+[Source: https://itsfoss.com/apt-command-guide/](https://itsfoss.com/apt-command-guide/)
 
 # Using apt Commands in Linux [Complete Guide] - It's FOSS
 _**Examples so that you can manage packages effectively.**_

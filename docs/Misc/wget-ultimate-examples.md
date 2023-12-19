@@ -1,5 +1,9 @@
 
-https://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/
+# `wget` Ultimate Examples
+[[toc]]
+
+[https://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/](https://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/)
+
 
 > wget utility is the best option to download files from internet. wget can pretty much handle all complex download situations including large file downloads
 

@@ -1,4 +1,5 @@
 # Composer
+[[toc]]
 
 ## Installing Composer:
 
@@ -26,10 +27,6 @@ $ composer
 Or, inside your .bashrc, add :
 
 `export PATH=$PATH:"$HOME/.config/composer/vendor/bin"`
-
-
-
-
 
 ## Remove unused dependences
 

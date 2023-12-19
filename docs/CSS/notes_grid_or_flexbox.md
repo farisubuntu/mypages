@@ -1,3 +1,7 @@
+[[toc]]
+
+# Notes about grid/flexbox layout
+
 - for learning purposes you can replace all `block-level` elements with `<div>` so you can avoid thinking about **semantic** `html` elements and **css inheritance** and default/initial styles.
 - think of page elements as **block-box** or **inline-box**; say push it right? push it down? and so on.
 - use `padding`, `width` as initial then modify styles as required.

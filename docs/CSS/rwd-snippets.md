@@ -1,3 +1,5 @@
+[[toc]]
+
 # RWD notes:
 
 ## Convert a Menu to a Dropdown for Small Screens
@@ -23,6 +25,7 @@
  </select>
 </nav>
 ```
+
 ``` css
 nav select {
   display: none;
@@ -41,6 +44,7 @@ nav select {
 ## Fluid layout
 
 - The font size:
+
 ```css
 /*  The font size will change
    as per the viewport width. */
@@ -103,10 +107,10 @@ h2 {
 
 ![not found](https://ishadeed.com/assets/responsive-design/logical-properties.jpeg)
 
+
 ```css
 /* With CSS logical properties, we can write the CSS once, 
 and it will be responsive to the user’s preferred language. */
-x
 .card {
   padding-inline-start: 2.5rem;
   padding-inline-end: 1rem;
@@ -129,7 +133,7 @@ x
 
 - for info, see:[mdn CSS container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries)
 
-- To use container queries:
+### To use container queries:
 
   - Declare a containment context on an element by `container-type` property with a value of `size, inline-size`, or `normal`.
 

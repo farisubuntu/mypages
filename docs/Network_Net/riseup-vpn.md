@@ -1,16 +1,5 @@
 # RiseupVPN for Linux
-
-1.  [Requirements](https://riseup.net/en/vpn/linux/#requirements)
-2.  [Snap Installation](https://riseup.net/en/vpn/linux/#snap-installation)
-3.  [Package Installation](https://riseup.net/en/vpn/linux/#package-installation)
-4.  [Troubleshooting](https://riseup.net/en/vpn/linux/#troubleshooting)
-    1.  [Bug Reports and Feature Requests](https://riseup.net/en/vpn/linux/#bug-reports-and-feature-requests)
-    2.  [Get the logs](https://riseup.net/en/vpn/linux/#get-the-logs)
-    3.  [Force quit](https://riseup.net/en/vpn/linux/#force-quit)
-    4.  [Won’t start](https://riseup.net/en/vpn/linux/#wont-start)
-    5.  [Test a pre-release version](https://riseup.net/en/vpn/linux/#test-a-pre-release-version)
-    6.  [Remove PID file](https://riseup.net/en/vpn/linux/#remove-pid-file)
-5.  [Source code](https://riseup.net/en/vpn/linux/#source-code)
+[[toc]]
 
 ## Requirements
 
@@ -76,10 +65,8 @@ Please include the following information in your bug report:
 
 The log of RiseupVPN is located in your home folder:
 
-```
-~/.config/leap/systray.log
+`~/.config/leap/systray.log`
 
-```
 
 When reporting a bug it is very useful to include the log file.
 
@@ -87,18 +74,16 @@ When reporting a bug it is very useful to include the log file.
 
 If anything stops working, run these commands and then try again:
 
-```
+```bash
 sudo pkill -e -f riseup-vpn
-
 ```
 
 ### Won’t start
 
 If the launcher icon does not work, you can run RiseupVPN from the command line in order to identify the problem:
 
-```
+```bash
 /snap/bin/riseup-vpn.launcher
-
 ```
 
 Any problem starting will be displayed on the terminal.
@@ -107,9 +92,8 @@ Any problem starting will be displayed on the terminal.
 
 If you want to help us test a development, pre-release version of RiseupVPN, you can install it using this command:
 
-```
+```bash
 sudo snap install --classic --beta riseup-vpn
-
 ```
 
 ### Remove PID file
@@ -118,7 +102,7 @@ Sometimes RiseupVPN will fail to start if it thinks another version is already r
 
 If you get this error, run these commands:
 
-```
+```shell
 sudo pkill -e -f riseup-vpn
 test -f ~/.config/leap/systray.pid && rm -v ~/.config/leap/systray.pid
 ```

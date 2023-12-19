@@ -1,3 +1,5 @@
+[[toc]]
+
 ## CSS Paged Media:	
 > From w3c:
 ### Page Terminology:

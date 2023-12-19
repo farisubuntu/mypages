@@ -1,1 +1,1 @@
-Forked at : (https://farisubuntu.github.io/git-flight-rules/)
+[This forked and moved to: https://farisubuntu.github.io/git-flight-rules/](https://farisubuntu.github.io/git-flight-rules/)
