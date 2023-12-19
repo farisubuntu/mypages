@@ -1,6 +1,7 @@
 # SymfonyCasts
+[[toc]]
 
-(https://symfonycasts.com/screencast/symfony/flex#play)
+[from - https://symfonycasts.com/screencast/symfony/flex#play](https://symfonycasts.com/screencast/symfony/flex#play)
 
 ## Symfony Flex: Aliases, Packs & Recipes
 
