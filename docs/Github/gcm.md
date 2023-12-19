@@ -40,7 +40,6 @@ Some credential stores have limitations, or further configuration required depen
 
 > Requires `gpg`, `pass`, and a `GPG` key pair.
 
-
 ```shell
 $ export GCM_CREDENTIAL_STORE=gpg
 # or
