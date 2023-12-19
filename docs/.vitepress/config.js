@@ -97,6 +97,6 @@ module.exports = {
     
   },
   ignoreDeadLinks: true,
- base: "/mypages/"  
+  
 };
 
