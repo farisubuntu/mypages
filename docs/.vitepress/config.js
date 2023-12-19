@@ -100,6 +100,5 @@ module.exports = {
     },
   },
   ignoreDeadLinks: true,
-  base: "/mypages/",
 };
 // base: '/mypages/'
