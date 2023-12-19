@@ -3,10 +3,6 @@ module.exports = {
   themeConfig: {
     logo: "/images/logo.png",
     siteTitle: "My Pages",
-    sitemap: {
-      hostname: "https://github.com/farisubuntu/mypages",
-      lastmodDateOnly: "false",
-    },
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/About/" },
