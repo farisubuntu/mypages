@@ -21,9 +21,9 @@
 
 <div class="card">
 
-- [media types (devices)](http://localhost:5173/CSS/css-media-and-rwd.html#media-types-devices)
-- [Responsive Design - Media Queries: Examples](http://localhost:5173/CSS/css-media-and-rwd.html#responsive-design-media-queries-examples)
-- [Responsive Design - Pseudo-Elements: Examples](http://localhost:5173/CSS/css-media-and-rwd.html#responsive-design-pseudo-elements-examples)
+- [media types (devices)](../CSS/css-media-and-rwd.html#media-types-devices)
+- [Responsive Design - Media Queries: Examples](../CSS/css-media-and-rwd.html#responsive-design-media-queries-examples)
+- [Responsive Design - Pseudo-Elements: Examples](../CSS/css-media-and-rwd.html#responsive-design-pseudo-elements-examples)
 
 </div>
 

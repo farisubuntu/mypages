@@ -1,7 +1,6 @@
 # Basics
 
 > For resources, see the end of this file
-> <br>
 
 ## PHP types
 
@@ -36,7 +35,8 @@ call_something($callable);
 
 - Some functions like `call_user_func()` or `usort()` accept user-defined callback functions as a parameter. Callback functions can not only be simple functions, but also object methods, including static class methods.
 - A PHP function is passed by its name as a string.
-  For example:
+
+For example:
 
 ```php
 // An example callback function
@@ -94,7 +94,8 @@ call_user_func($c, 'PHP!');
 - PHP is a dynamically typed language, which means that by default there is no need to `.....`
 - To check the value and type of an expression, use the `var_dump()`
 - to check if an expression is of a certain type use the `is_type` functions instead.
-- practices:
+
+practices:
 
 ```php
 <?php
@@ -119,24 +120,25 @@ if (is_string($a_bool)) {
 ?>
 ```
 
-<hr style="border:2px solid blue;background-color:blue;">
-
 ## Variables Scope
 
 <p>see notesforproffesionals-php section 3</p>
 
 - **variable scope** = visibility thought out PHP scope blocks which defined by functions, classes and a global scope.
 - **Super global variable**: built-in variables that are always available in **all scope** and to access them within functions or methods, there is no need to do `global $variable` or to pass them as parameters in your functions.
-  Examples:
-  - `$GLOBALS` - References all variables available in global scope
-  - `$_SERVER` - Server and execution environment information (info such as `headers,paths and script locations`)
-  - `$_GET` - HTTP GET variables
-  - `$_POST` - HTTP POST variables
-  - `$_FILES` - HTTP File Upload variables
-  - `$_COOKIE` - HTTP Cookies
-  - `$_SESSION` - Session variables
-  - `$_REQUEST` - HTTP Request variables
-  - `$_ENV` - Environment variables
+
+Examples:
+
+- `$GLOBALS` - References all variables available in global scope
+- `$_SERVER` - Server and execution environment information (info such as `headers,paths and script locations`)
+- `$_GET` - HTTP GET variables
+- `$_POST` - HTTP POST variables
+- `$_FILES` - HTTP File Upload variables
+- `$_COOKIE` - HTTP Cookies
+- `$_SESSION` - Session variables
+- `$_REQUEST` - HTTP Request variables
+- `$_ENV` - Environment variables
+
 - **Static properties and variables** (inside classes declared by: `public static int $variable`) is same as **global variable** and doesn't require an instantiation of the class.
 - **Functions can also define static variables inside their own scope by: `static $variable`**. This useful for example to save data after function/method is terminated.
 
@@ -203,7 +205,9 @@ var_dump($myGlobal);//string 'global' (length=6)
 
 - define Arrays
 - add a new variables using an index. for ex. add an item to the end of the list which contains 5 items?
-  > Arrays can contain different types of variables according to your needs, and can even contain other arrays or objects as members.
+
+> Arrays can contain different types of variables according to your needs, and can even contain other arrays or objects as members.
+
 - To delete an item from an array, use the `.....` function on the member itself.
 
 example:
@@ -316,8 +320,11 @@ $extension = substr($filename, strlen($filename) - 3);
 Examples:
 
 ```php
-/* If there is a possibility of meeting multi-byte character strings,
- then it would be safer to use mb_substr:*/
+/* 
+If there is a possibility of meeting multi-byte character strings,
+ then it would be safer to use mb_substr:
+*/
+
 $sentence = "هذا مكتوب بالعربية";
 var_dump(substr($sentence,0,3));// string(3) "ه�"
 echo "<hr>";
@@ -327,16 +334,18 @@ $foo = 'Hello world';
 // below will result in $foo= 'Hello World';
 $foo[6] = 'W';
 substr_replace($foo, 'W', 6, 1);
-/* note below, the replacement string need not be the same length as
- the substring replaced.*/
+/* note below, the replacement string need not be the same length as the substring replaced.*/
 substr_replace($foo, 'Whi', 6, 2);// result in :  'Hello Whirled'
-/* Let's say you want to find a specific word in a string - and don't
-want to use Regex.*/
+/*
+ Let's say you want to find a specific word in a string - and don't want to use Regex.
+*/
 $bye = "Goodbye cruel World!";
 var_dump(strpos($bye, " ")); // int(7)
 var_dump(substr($bye, -1 * (strlen($bye) - strpos($bye, " ")))); // string(13) " cruel World!"
 
-/*Another option is a very basic parsing of an email.*/
+/*
+Another option is a very basic parsing of an email.
+*/
 $email = "test@example.com";
 $wrong = "foobar.co.uk";
 $notld = "foo@bar";
@@ -348,7 +357,6 @@ $domain = substr($email, $at + 1); // string(11) "example.com"
 $womain = substr($wrong, $wat + 1); // string(11) "oobar.co
 $nomain = substr($notld, $nat + 1); // string(3) "bar"
 // for complete example: noteforproffesional - page 150
-
 ```
 
 #### Joining and splitting:
@@ -375,12 +383,11 @@ $email = "user@example.com";
 list($name, $domain) = explode("@", $email);
 echo "$name <br>"; // user
 echo "$domain"; // example.com
-// `strstr` strips away or only returns the substring before the first occurrence of the given needle.
+// strstr strips away or only returns the substring before the first occurrence of the given needle.
 $string = "1:23:456";
 echo json_encode(explode(":", $string)); // ["1","23","456"]
 var_dump(strstr($string, ":")); // string(7) ":23:456"
 var_dump(strstr($string, ":", true)); // string(1) "1"
-
 ```
 
 - To **join** back an array to a single string separated with commas, we use the `implode` function:
@@ -406,14 +413,14 @@ var_dump(strpos("haystack", "stackoverflow"); // bool(false)
 - **Search starting from an offset**
 - **Get all occurrences of a substring**
 
-### String Formating: 
+### String Formating:
 
 #### string interpolation:
+
 <p>see phpnotesforprofessionals - chapter 24</p>
 
 - You can also use interpolation to interpolate (insert) a variable within a string. Interpolation works in double quoted
-strings and the heredoc syntax only.
-
+  strings and the heredoc syntax only.
 
 ## PHP Loops
 
@@ -725,9 +732,10 @@ $welcome('John');
 echo "\n";
 $welcome('Peter');
 ```
+
 - A closure is an anonymous function that can't access outside scope.
 - When defining an anonymous function as such, you're creating a "namespace" for that function. It currently only
-has access to that namespace.
+  has access to that namespace.
 - Closures may also inherit variables from the parent scope. Any such variables must be passed to the `use` language construct.
 - Inheriting variables from the parent scope is not the same as using global variables. Global variables exist in the global scope, which is the same no matter what function is executing. The parent scope of a closure is the function in which the closure was declared (not necessarily the function it was called from). See the following example:
 
@@ -785,7 +793,7 @@ var_dump($example()); // string(11) "hello World"
 Example 2:
 
 ```php
-/* A basic shopping cart which contains a list of added products and the quantity of each product. 
+/* A basic shopping cart which contains a list of added products and the quantity of each product.
 Includes a method which calculates the total price of the items in the cart using
  a closure as a callback.*/
 
@@ -931,7 +939,7 @@ $service('test 2');
 - Arrow functions have the basic form `fn (argument_list) => expr`.
 - Arrow functions support the same features as anonymous functions, except that using variables from the parent scope is always automatic.
 
-Example: 
+Example:
 
 ```php
 $z=2;

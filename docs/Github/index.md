@@ -1,7 +1,6 @@
 # Git / Github
 
 - [gcm](./gcm.md)
-- [Git Branching](./git-branching)
 - [Git Command Line - `gh-cli`](./gh)
 - [Git And Git branching](./git)
 - [Gitpod](./gitpod)

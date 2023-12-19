@@ -1,6 +1,6 @@
-[[toc]]
 
-# Basic grid layout concepts {#identifier .h1}
+# Basic grid layout concepts 
+[[toc]]
 
 - source 1: 
 (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
@@ -18,7 +18,7 @@ https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png
   - https://css-tricks.com/snippets/css/complete-guide-grid/
   - https://learncssgrid.com/
 
-## Basic Example: use this html code to create a grid with 3 200-px width column tracks {#identifier .h2}
+## Basic Example: use this html code to create a grid with 3 200-px width column tracks 
 
 ```html
 <div class="wrapper">
@@ -45,16 +45,16 @@ A track is the space between two grid lines. A row track is between two row line
 }
 ```
 
-## The fr unit and Unequal sizes: {#identifier .h2}
+## The fr unit and Unequal sizes: 
 
 - create three equal width tracks that grow and shrink according to the available space.
 - give 2 parts to the first track and one part each to the next two tracks.
 
-## Mixing flexible and absolute sizes {#identifier .h2}
+## Mixing flexible and absolute sizes 
 
 - what happen when you mix absolute sized tracks with fr units. The first track is 500 pixels?
 
-## Intrinsic sizing keywords {#identifier .h2}
+## Intrinsic sizing keywords 
 
 - grid tracks can use **intrinsic sizing keywords:
     - `min-content`: make a track as small as it can be without the track content overflowing. 
@@ -63,38 +63,38 @@ A track is the space between two grid lines. A row track is between two row line
 
 
 
-## Item placement {#identifier .h2}
+## Item placement 
 
 - You can place items into a precise location on the grid using **lines ,area** and **names**
 
 
-## Track listings with repeat() notation {#identifier .h2}
+## Track listings with repeat() notation 
 
 - use the `repeat()` notation to create a `grid` with an initial 20px track and repeating of 6 tracks then a final 20px track?
 - grid will consist of 10 tracks, a 1fr track, and then followed by a 2fr track. This pattern will be repeated five times.
 
-## Implicit and explicit grids {#identifier .h2}
+## Implicit and explicit grids 
 
 - explain the differences and how control what happen when more grid tracks are needed? *(hint: `grid-auto-rows`,`grid-auto-columns`)*
 
 
-## Track sizing and `minmax` {#identifier .h2}
+## Track sizing and `minmax` 
 - ensure that automatically created rows will be a minimum of 100 pixels tall, and a maximum of `auto`.
 - what's `auto` means? *(hint: respect the content size,prevent overflow)*
 
-## Grid Lines {#identifier .h2}
+## Grid Lines 
 
 - Lines are numbered according to the writing mode of the document.
 - how many lines in a grid with a 3 columns and 3 rows?
 
-## Gutters (gaps) {#identifier .h2}
+## Gutters (gaps) 
 
 - create a 10px gap between columns and a 1em gap between rows.(*hint: target the container*)
 - relation between flexible length `fr` tracks and spaces used by a gaps?
 
 ---
 
-## Auto-fit Vs Auto-fill {#identifier .h2}
+## Auto-fit Vs Auto-fill 
 
 When using CSS grid `minmax()` function, it's important to decide between using the `auto-fit` or `auto-fill` keywords:
 
@@ -107,7 +107,7 @@ When using CSS grid `minmax()` function, it's important to decide between using 
 
 --- 
 
-## Minimum Content Size In CSS grid {#identifier .h2}
+## Minimum Content Size In CSS grid 
 
 - Similar to flexbox, CSS grid has a default minimum content size for its child items which is auto. That means, if there is an element that is larger than the grid item (__for example: a long item content displayed as flex so it must be inline and the item grid will respect that due to its default size which it `auto`__), it will overflow and a horizontal scrolling bar will appeared.
 
@@ -123,7 +123,7 @@ see details: https://defensivecss.dev/tip/grid-min-content-size/
 
 
 ---
-## Fluid columns snippet {#identifier .h2}
+## Fluid columns snippet 
 
 Fluid width columns that break into more or less columns as space is available, with no media queries!
 
@@ -144,7 +144,7 @@ for example:
 ```
 > One of the common things that break a layout is using a **fixed** width or height with an element that has content in different lengths. Instead, use `min/max-height/width`
 
-## Positioning items against lines {#identifier .h2}
+## Positioning items against lines 
 
 - using following grid container:
 ```css
@@ -156,14 +156,14 @@ for example:
 ```
 
 Write a code to modify a grid layout to be like this image:
-<img src="../data/images/grid-example.png" alt="not found" />
+<img src="./images/grid-example.png" alt="not found" />
 
 (also try the shorthands `grid-row: x/z`,`grid-column: x/z`)
 
-## Grid Cells {#identifier .h2}
+## Grid Cells 
 - the smallest unit on a grid (looks like a table cell) and its the intersection of a grid `...` and a grid `...`
 
-## Grid areas {#identifier .h2}
+## Grid areas 
 - A grid area is the logical space used to lay out one or more grid items.
 - Consists of one or more `...`
 - bounded by 4 `grid lines`, one for each size.
@@ -176,7 +176,7 @@ Write a code to modify a grid layout to be like this image:
 
 
 the final layout:
-![not found](../data/images/grid-areas.png "grid areas")
+![not found](./images/grid-areas.png "grid areas")
 - We can create gaps (or hard “stops”) between cells using a dot `.` which means 'empty cell'
 - Rows must have the same number of columns
 
@@ -206,7 +206,7 @@ goal:
 - the final layout: 
 (https://mdn.github.io/learning-area/css/css-layout/grids/8-placement-starting-point.html)
 
-## Image maximum width {#identifier .h2}
+## Image maximum width 
 
 - Don't forget to set `max-width: 100%` to all images. This can be added to the CSS reset that you use:
 
@@ -217,7 +217,7 @@ img {
 }
 ```
 
-## Position sticky with CSS Grid {#identifier .h2}
+## Position sticky with CSS Grid 
 
 -  The default behavior for grid items is to `stretch`. As a result, the aside element in the example below is equal to the main section height.
 
@@ -266,20 +266,20 @@ grid-template-columns:
 ##### notes:
 - `justify-items` (row-axis) the opposed to `align-items`(column-axis)
 - 
-## Nested grid and subgrid {#identifier .h2}
+## Nested grid and subgrid 
 - The difference?
 
-## Controlling the order {#identifier .h2}
+## Controlling the order 
 - *Complete*: We can control the order in which items stack up by using the `...` property?
 
 ---
 
-# Relationship of grid layout to other layout methods {#identifier .h1}
+# Relationship of grid layout to other layout methods 
 
 source: 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
 
-## Grid and flexbox {#identifier .h2}
+## Grid and flexbox 
 - The basic difference?
 - when you wrap flex items, each new row (or column when working by column) is an independent flex line in the flex container. **Space distribution happens across the flex line.**
 - 

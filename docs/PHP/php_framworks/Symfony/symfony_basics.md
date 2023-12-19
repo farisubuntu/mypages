@@ -105,7 +105,7 @@ Creating a new page - whether it's an HTML page or a JSON endpoint - is a two st
 - Create a controller and a method: This is a function where you build the page and ultimately return a Response object. You'll learn more about controllers in their own section, including how to return JSON responses;
 - Create a route: In config/routes.yaml, the route defines the URL to your page (path) and what controller to call. You'll learn more about routing in its own section, including how to make variable URLs.
 
-#### Example: Create a (http://localhost:8000/lucky/number) page:
+#### Example: Create a '/lucky/number' page:
 
 ```php
 <?php
@@ -133,7 +133,7 @@ class LuckyController{
 - php attributes is a metadata for code
 - no ';' at the end
 */
-/* Note: try it out bu goiong to => http://localhost:8000/lucky/number
+/* Note: try it out by goiong to => lucky/number
 */
 }
 ```
