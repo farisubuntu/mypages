@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   title: "My Pages", //append to all page titles
   themeConfig: {
     logo: "/images/logo.png",

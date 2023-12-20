@@ -1,27 +1,21 @@
 {
   "name": "mypages",
   "version": "1.0.0",
-  "description": "my notes of any thing related to computer",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "docs:preview": "vitepress preview docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/farisubuntu/"
-  },
-  "author": "farisubuntu",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^5.0.10",
-    "vitepress": "^1.0.0-rc.32",
-    "vue": "^3.3.12"
+    "vitepress": "^1.0.0-rc.32"
   }
 }
