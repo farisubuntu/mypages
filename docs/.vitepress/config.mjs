@@ -27,45 +27,43 @@ export default {
     sidebar: [
       {
         text: "CSS",
-        link: "./CSS/",
+        link: "/CSS/",
       },
       {
         text: "Github",
-        link: "./Github/",
-        collapsible: false,
+        link: "/Github/",
       },
       {
         text: "javascript",
-        link: "./javascript/",
+        link: "/javascript/",
       },
       {
         text: "JSON",
-        link: "./JSON/",
+        link: "/JSON/",
       },
       {
         text: "Linux",
-        link: "./Linux/",
-        collapsible: false,
+        link: "/Linux/",
       },
       {
         text: "Markdown",
-        link: "./Markdown/",
+        link: "/Markdown/",
       },
       {
         text: "Misc",
-        link: "./Misc/",
+        link: "/Misc/",
       },
       {
         text: "Network_Net",
-        link: "./Network_Net/",
+        link: "/Network_Net/",
       },
       {
         text: "PHP",
-        link: "./PHP/",
+        link: "/PHP/",
       },
       {
         text: "Blog",
-        link: "./Blog/",
+        link: "/Blog/",
       },
       {
         text: "Vite / Vitepress",
@@ -73,7 +71,7 @@ export default {
       },
       {
         text: "DD-WRT Help",
-        link: "./DD-WRT-Help/",
+        link: "/DD-WRT-Help/",
       },
     ],
     footer: {

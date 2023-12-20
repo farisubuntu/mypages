@@ -128,31 +128,16 @@ user-agent = "npm/6.13.7 node/v12.15.0 linux x64"
 
 ;  "npm config ls -l" to show all defaults.
 
-  
-
 ```
-
-  
 
 This gives us information about our install. For now, it’s important to get the current global location:
 
-  
-
 ```bash
-
 $ npm config get prefix
-
 /usr
-
-  
-
 ```
 
-  
-
-This is the prefix we want to change, in order to install global packages in our home directory. To do that create a new directory in your home folder:
-
-  
+This is the prefix we want to change, in order to install global packages in our home directory. To do that create a new directory in your home folder:  
 
 ```bash
 
@@ -189,11 +174,7 @@ We still have npm installed in a location owned by root. But because we changed 
   
 
 ```bash
-
 npm install npm@latest -g
-
-  
-
 ```
 
   
@@ -203,36 +184,22 @@ Finally, we need to add `.node_modules_global/bin` to our `$PATH` environment va
   
 
 ```bash
-
 export PATH="$HOME/.node_modules_global/bin:$PATH"
-
-  
-
 ```
-
-  
 
 Now our `.node_modules_global/bin` will be found first and the correct version of npm will be used:
 
-  
 
 ```bash
-
 $ which npm
-
 /home/sitepoint/.node_modules_global/bin/npm
-
 $ npm --version
-
 6.13.7
-
-  
-
 ```
 
   
 
-_Tip: you can avoid all of this if you use a Node version manager. Check out this tutorial to find out how: [Installing Multiple Versions of Node.js Using nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)._
+> Tip: you can avoid all of this if you use a Node version manager. Check out this tutorial to find out how: [Installing Multiple Versions of Node.js Using nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/).
 
   
 

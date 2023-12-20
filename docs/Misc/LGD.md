@@ -1,6 +1,8 @@
+# Logical gradation of developers’ level of expertise: ((junior, middle, senior and lead))
 
-# Logical gradation of developers’ level of expertise: junior, middle, senior and lead.
+---
 [[toc]]
+---
 
 The terms “developer” and “engineer” and “ programmer” are often used interchangeably, but they might differ for many cutting-edge software development companies. So, it’s obvious that it might be hard to determine which kind of a job position your company needs. This post will put light into these issues, covering at the same time some tips on how to properly choose the specialist with the required technical expertise.
 
