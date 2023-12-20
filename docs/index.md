@@ -1,6 +1,5 @@
 ---
 title: My Pages
-layout: doc
 ---
 
 # Welcome to MyPages site

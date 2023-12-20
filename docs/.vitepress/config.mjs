@@ -27,24 +27,20 @@ export default {
     sidebar: [
       {
         text: "CSS",
-        link: "/CSS/",
-        collapsible: false,
+        link: "./CSS/",
       },
       {
         text: "Github",
-        link: "/Github/",
+        link: "./Github/",
         collapsible: false,
-        ignoreDeadLinks: true,
       },
       {
         text: "javascript",
-        link: "/javascript/",
-        collapsible: false,
+        link: "./javascript/",
       },
       {
         text: "JSON",
         link: "/JSON/",
-        collapsible: false,
       },
       {
         text: "Linux",
@@ -54,32 +50,26 @@ export default {
       {
         text: "Markdown",
         link: "/Markdown/",
-        collapsible: false,
       },
       {
         text: "Misc",
         link: "../Misc/index",
-        collapsible: false,
       },
       {
         text: "Network_Net",
         link: "/Network_Net/",
-        collapsible: false,
       },
       {
         text: "PHP",
         link: "/PHP/",
-        collapsible: false,
       },
       {
         text: "Blog",
         link: "/Blog/",
-        collapsible: false,
       },
       {
         text: "Vite / Vitepress",
         link: "/Vite_and_Vitepress/",
-        collapsible: false,
       },
       {
         text: "DD-WRT Help",
