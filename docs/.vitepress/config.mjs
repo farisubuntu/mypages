@@ -40,32 +40,32 @@ export default {
       },
       {
         text: "JSON",
-        link: "/JSON/",
+        link: "./JSON/",
       },
       {
         text: "Linux",
-        link: "/Linux/",
+        link: "./Linux/",
         collapsible: false,
       },
       {
         text: "Markdown",
-        link: "/Markdown/",
+        link: "./Markdown/",
       },
       {
         text: "Misc",
-        link: "../Misc/index",
+        link: "./Misc/",
       },
       {
         text: "Network_Net",
-        link: "/Network_Net/",
+        link: "./Network_Net/",
       },
       {
         text: "PHP",
-        link: "/PHP/",
+        link: "./PHP/",
       },
       {
         text: "Blog",
-        link: "/Blog/",
+        link: "./Blog/",
       },
       {
         text: "Vite / Vitepress",
@@ -73,7 +73,7 @@ export default {
       },
       {
         text: "DD-WRT Help",
-        link: "/DD-WRT-Help/",
+        link: "./DD-WRT-Help/",
       },
     ],
     footer: {
