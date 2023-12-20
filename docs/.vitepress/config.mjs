@@ -27,33 +27,33 @@ export default {
     sidebar: [
       {
         text: "CSS",
-        link: "../CSS/index",
+        link: "/CSS/",
         collapsible: false,
       },
       {
         text: "Github",
-        link: "../Github/index",
+        link: "/Github/",
         collapsible: false,
         ignoreDeadLinks: true,
       },
       {
         text: "javascript",
-        link: "../javascript/index",
+        link: "/javascript/",
         collapsible: false,
       },
       {
         text: "JSON",
-        link: "../JSON/index",
+        link: "/JSON/",
         collapsible: false,
       },
       {
         text: "Linux",
-        link: "../Linux/index",
+        link: "/Linux/",
         collapsible: false,
       },
       {
         text: "Markdown",
-        link: "../Markdown/index",
+        link: "/Markdown/",
         collapsible: false,
       },
       {
@@ -63,27 +63,27 @@ export default {
       },
       {
         text: "Network_Net",
-        link: "../Network_Net/index",
+        link: "/Network_Net/",
         collapsible: false,
       },
       {
         text: "PHP",
-        link: "../PHP/index",
+        link: "/PHP/",
         collapsible: false,
       },
       {
         text: "Blog",
-        link: "../Blog/index",
+        link: "/Blog/",
         collapsible: false,
       },
       {
-        text: "Vite/Vitepress",
-        link: "../Vite_and_Vitepress/index",
+        text: "Vite / Vitepress",
+        link: "/Vite_and_Vitepress/",
         collapsible: false,
       },
       {
         text: "DD-WRT Help",
-        link: "../DD-WRT-Help/index",
+        link: "/DD-WRT-Help/",
       },
     ],
     footer: {
