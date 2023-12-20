@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
+   "type": "module",
     "doc": "docs"
   },
   "scripts": {
