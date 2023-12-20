@@ -97,6 +97,7 @@ export default {
     
   },
   ignoreDeadLinks: true,
+  base: '/mypages/',
   
 };
 
