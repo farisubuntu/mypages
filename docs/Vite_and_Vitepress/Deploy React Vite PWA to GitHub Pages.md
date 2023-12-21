@@ -1,6 +1,8 @@
 ---
 title:  Deploy React Vite PWA to GitHub Pages
+
 ---
+
 [[toc]]
 
 GitHub repo: [https://github.com/iamfranco/example-react-vite-pwa](https://github.com/iamfranco/example-react-vite-pwa)
